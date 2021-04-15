@@ -9,12 +9,29 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@ConfigurationProperties("spring.application")
+@ConfigurationProperties(prefix = "app")
 @Configuration
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class AppProperties {
-	@JsonProperty("name")
-	private String appName;
+	private PageTag page = new PageTag();
+	private ApiTag api = new ApiTag();
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	public static class PageTag {
+		private String title;
+		private String name;
+	}
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	public static class ApiTag {
+		private String opportunitiesSearchUrl;
+		private String opportunitiesAjaxSearchBoxUrl;
+		private String opportunitiesAjaxUrl;
+	}
 }

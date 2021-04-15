@@ -1,0 +1,27 @@
+package com.dzung.torre.properties;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@ConfigurationProperties(prefix = "app")
+@Configuration
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class AppProperties {
+	private PageTag page = new PageTag();
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	public static class PageTag {
+		private String title;
+		private String name;
+	}
+}

@@ -1,0 +1,8 @@
+<!-- SEARCH BAR -->
+<div th:fragment="searchBar">
+</div>
+
+<!-- SCRIPTS -->
+<div th:fragment="pageScript">
+</div>
+

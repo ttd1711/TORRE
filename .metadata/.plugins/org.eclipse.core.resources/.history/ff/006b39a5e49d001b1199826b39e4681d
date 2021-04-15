@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/pageLayout :: pageHead"></head>
+<body>
+	<!--  Header -->
+	<header th:replace="common/header :: mainHeader"></header>
+	<!-- Main Container -->
+	<div class="mainBody">
+		<div class="container">
+			<div th:replace="opportunities/searchBar :: searchBar"></div>
+			<div th:replace="opportunities/searchBar :: script"></div>
+		</div>
+	</div>
+	<!--  Footer -->
+	<footer th:replace="common/footer :: mainFooter"></footer>
+	<!--  page Script -->
+	<script th:replace="common/pageLayout :: pageScript"></script>
+	<script>
+		$(document).ready(
+				function() {
+					alert('111');
+				}
+				);
+				</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<div th:fragment="pageHeader">
+</div>
+<div th:fragment="pageFooter">
+</div>
+<div th:fragment="pageScript">
+</div>
+

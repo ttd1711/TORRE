@@ -1,0 +1,40 @@
+<div th:fragment="mainHeader">
+	<!-- Navigation -->
+	<nav
+		class="navbar navbar-color-on-scroll navbar-transparent fixed-top  navbar-expand-lg "
+		color-on-scroll="100" id="sectionsNav">
+		<div class="container">
+			<div class="navbar-translate">
+				<a class="navbar-brand" th:href="@{/}" th:text="${appName}"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span> <span
+						class="navbar-toggler-icon"></span> <span
+						class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link"
+						href="javascript:void(0)"> <i class="material-icons">work</i>
+							Jobs
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="javascript:void(0)"> <i class="material-icons">supervisor_account</i>
+							People
+					</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{#}"
+						target="_blank"> <i class="fa fa-twitter"></i>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{#}"
+						target="_blank"> <i class="fa fa-facebook-square"></i>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" th:href="@{#}"
+						target="_blank"> <i class="fa fa-instagram"></i>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>

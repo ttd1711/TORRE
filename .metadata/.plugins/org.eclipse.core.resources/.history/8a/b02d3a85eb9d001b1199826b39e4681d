@@ -1,0 +1,69 @@
+package com.dzung.torre.controller;
+
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.dzung.torre.opportunity.object.Aggregator;
+import com.dzung.torre.opportunity.object.OpportunitiesApiObj;
+import com.dzung.torre.opportunity.object.OpportunitySearchRequest;
+import com.dzung.torre.opportunity.service.OpportunityService;
+import com.dzung.torre.properties.AppProperties;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Controller
+@AllArgsConstructor
+@NoArgsConstructor
+@Slf4j
+public class MainController {
+	@Autowired
+	private AppProperties appProperties;
+	
+	@Autowired
+	private OpportunityService opportunityService;
+	
+	@GetMapping("/")
+	public String pageIndex(Model model) {
+		model.addAttribute("appName", appProperties.getPage().getName());
+		
+		return "index";
+	}
+	
+	
+	@GetMapping("/opportunities")
+	public String pageOpportunities(Model model) {
+		model.addAttribute("appName", appProperties.getPage().getName());
+		model.addAttribute("apiOppotunitiesSearchBoxUrl", appProperties.getApi().getOpportunitiesAjaxSearchBoxUrl());
+				
+		return "opportunities";
+	}
+	
+	
+	@PostMapping("/opportunities/searchBox")
+	public String boxOpportunitiesAggregator(Model model) {
+		//get search criteria
+		OpportunitySearchRequest opportunityRequest = new OpportunitySearchRequest();
+		opportunityRequest.setAggregate(true);
+		
+		OpportunitiesApiObj opportunityAggregate = opportunityService.findOpportunities(opportunityRequest);
+		
+		//sort Organization by Total
+		List<Aggregator.Organization> organizationCondList = opportunityAggregate.getAggregators().getOrganization();
+		Collections.sort(organizationCondList, Comparator.comparing(Aggregator.Organization::getTotal, Comparator.reverseOrder()));
+		//add to template
+		model.addAttribute("organizationCondList", organizationCondList);
+		model.addAttribute("opportunityAggregate", opportunityAggregate);
+		
+		return "opportunities/searchCondBox";
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.dzung.torre.properties;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@ConfigurationProperties("spring.application")
+@Configuration
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class AppProperties {
+	@JsonProperty("name")
+	private String appName;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="common/pageLayout :: pageHead"></head>
+<body>
+	<!--  Header -->
+	<header th:insert="common/header :: mainHeader"></header>
+	<!-- Main Container -->
+	<div class="container">
+		<div style="min-height: 400px">
+		</div>
+	</div>
+	<!--  Footer -->
+	<footer th:insert="common/footer :: mainFooter"></footer>
+	<!--  page Script -->
+	<div th:insert="common/pageLayout :: pageScript"></div>
+</body>
+</html>
