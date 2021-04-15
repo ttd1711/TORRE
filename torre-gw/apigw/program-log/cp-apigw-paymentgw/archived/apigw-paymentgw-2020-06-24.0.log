@@ -1,0 +1,479 @@
+2020-06-24 11:36:47,757 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] Routing file updated
+2020-06-24 11:36:48,328 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:36:48,330 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='2020052233512', dbId='5ee1e1b2226bfb93d6df8f41'}'}
+2020-06-24 11:36:48,331 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] doing cp subscription notification...
+2020-06-24 11:36:48,332 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] Received a new notification...
+2020-06-24 11:36:48,347 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='PAYMENT_NOTIFICATION_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='PAYMENT_NOTIFICATION_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='DELTADIGITALVN', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='TQCN', msisdn='0843052080', account='0843052080',cmd='null',trans_id='',price='2000',evenTime='2020-06-05 15:27:11',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='202006171530397915728129', dbId='5ee9d4b037ad8de4884fc826'}'}
+2020-06-24 11:36:48,348 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] doing cp payment notification...
+2020-06-24 11:36:48,648 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] New routes created.
+2020-06-24 11:36:49,363 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection'
+2020-06-24 11:36:50,362 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection'
+2020-06-24 11:36:51,370 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+2020-06-24 11:36:51,372 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:36:51,374 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_NOTIFICATION_LOG', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='2020052233512', dbId='5ee1e1b2226bfb93d6df8f41'}'}
+2020-06-24 11:36:51,375 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:36:51,375 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='20200522335121', dbId='5ee1e292226bfb93d6df8f43'}'}
+2020-06-24 11:36:51,375 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] doing cp subscription notification...
+2020-06-24 11:36:52,376 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+2020-06-24 11:36:53,382 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection'
+2020-06-24 11:36:54,390 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+2020-06-24 11:36:54,393 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:36:54,393 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_NOTIFICATION_LOG', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='20200522335121', dbId='5ee1e292226bfb93d6df8f43'}'}
+2020-06-24 11:36:54,395 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:36:54,396 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='20200522335122', dbId='5ee1e4e6226bfb93d6df8f4a'}'}
+2020-06-24 11:36:54,396 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] doing cp subscription notification...
+2020-06-24 11:36:55,407 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection'
+2020-06-24 11:36:56,418 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+2020-06-24 11:36:56,420 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:36:56,420 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='20200522335123', dbId='5ee1e519226bfb93d6df8f4b'}'}
+2020-06-24 11:36:56,420 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] doing cp subscription notification...
+2020-06-24 11:36:57,427 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection'
+2020-06-24 11:36:58,434 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+2020-06-24 11:36:58,435 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:36:58,435 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='20200522335124', dbId='5ee1e6ca226bfb93d6df8f4d'}'}
+2020-06-24 11:36:58,436 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] doing cp subscription notification...
+2020-06-24 11:36:59,441 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection'
+2020-06-24 11:37:00,449 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+2020-06-24 11:37:00,450 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:37:00,451 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='20200522335125', dbId='5ee1e72c226bfb93d6df8f4f'}'}
+2020-06-24 11:37:00,451 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] doing cp subscription notification...
+2020-06-24 11:37:01,459 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection'
+2020-06-24 11:37:02,472 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+2020-06-24 11:37:02,474 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:37:02,474 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='20200522335126', dbId='5ee1e76d226bfb93d6df8f51'}'}
+2020-06-24 11:37:02,475 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] doing cp subscription notification...
+2020-06-24 11:37:03,483 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection'
+2020-06-24 11:37:04,490 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+2020-06-24 11:37:04,491 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:37:04,491 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='20200522335127', dbId='5ee1e7d1226bfbcf330a3eca'}'}
+2020-06-24 11:37:04,492 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] doing cp subscription notification...
+2020-06-24 11:37:05,498 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection'
+2020-06-24 11:37:06,508 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+2020-06-24 11:37:06,509 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:37:06,510 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='20200522335128', dbId='5ee1e800226bfbcf330a3ecc'}'}
+2020-06-24 11:37:06,510 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] doing cp subscription notification...
+2020-06-24 11:37:07,514 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection'
+2020-06-24 11:37:08,520 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+2020-06-24 11:37:08,521 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Received a new notification...
+2020-06-24 11:37:08,522 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='RENEW_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='RENEW_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='EDU6', msisdn='0843052080', account='0843052080',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='20200522335129', dbId='5ee1e82f226bfbd04c0eaef2'}'}
+2020-06-24 11:37:08,522 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] doing cp subscription notification...
+2020-06-24 11:37:09,528 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection'
+2020-06-24 11:37:10,535 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpSubscriptionNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection
+2020-06-24 11:37:49,760 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> POST /payment/apigw
+2020-06-24 11:37:49,764 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MjA5ODM1NSwiaWF0IjoxNTkxMjM0MzU1fQ.9vl56s0ODwGhIUKFtvjPeam6yDeYwN51B9I3HVlZbaUSu62ExsUKkJyTprh5nq5z5mfsS0Ep4f5iH_K7icdoIQ
+2020-06-24 11:37:49,765 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-type: application/json
+2020-06-24 11:37:49,765 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.25.0
+2020-06-24 11:37:49,765 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept: */*
+2020-06-24 11:37:49,766 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-06-24 11:37:49,766 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> postman-token: 5528a4da-cd95-444e-a285-6373fc4b7d72
+2020-06-24 11:37:49,766 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> host: 127.0.0.1:8881
+2020-06-24 11:37:49,766 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-06-24 11:37:49,767 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> connection: keep-alive
+2020-06-24 11:37:49,767 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-length: 225
+2020-06-24 11:37:49,768 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>
+2020-06-24 11:37:49,769 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-06-24 11:37:49,769 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Ip Adress '127.0.0.1' is valid
+2020-06-24 11:37:49,770 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-06-24 11:37:49,770 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MjA5ODM1NSwiaWF0IjoxNTkxMjM0MzU1fQ.9vl56s0ODwGhIUKFtvjPeam6yDeYwN51B9I3HVlZbaUSu62ExsUKkJyTprh5nq5z5mfsS0Ep4f5iH_K7icdoIQ'
+2020-06-24 11:37:49,770 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Looking for the header start with 'PGW'
+2020-06-24 11:37:49,846 WARN com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] the token is expired and not valid anymore
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2020-06-14T08:32:35Z. Current time: 2020-06-24T11:37:49Z, a difference of 875114845 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.dz.apigw.security.JwtTokenUtil.getAllClaimsFromToken(JwtTokenUtil.java:58)
+	at com.dz.apigw.security.JwtTokenUtil.getClaimFromToken(JwtTokenUtil.java:51)
+	at com.dz.apigw.security.JwtTokenUtil.getUsernameFromToken(JwtTokenUtil.java:39)
+	at com.dz.apigw.security.JwtAuthorizationTokenFilter.doFilterInternal(JwtAuthorizationTokenFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at com.dz.apigw.security.AuthorizationIPAddressFilter.doFilterWrapped(AuthorizationIPAddressFilter.java:84)
+	at com.dz.apigw.security.AuthorizationIPAddressFilter.doFilterInternal(AuthorizationIPAddressFilter.java:68)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-24 11:37:49,871 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< 401 Unauthorized
+2020-06-24 11:37:49,872 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< X-Content-Type-Options: nosniff
+2020-06-24 11:37:49,873 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< X-XSS-Protection: 1; mode=block
+2020-06-24 11:37:49,873 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2020-06-24 11:37:49,873 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< Pragma: no-cache
+2020-06-24 11:37:49,874 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< Expires: 0
+2020-06-24 11:37:49,874 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< X-Frame-Options: SAMEORIGIN
+2020-06-24 11:37:49,874 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|<
+2020-06-24 11:37:56,685 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> POST /login
+2020-06-24 11:37:56,685 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-type: application/json
+2020-06-24 11:37:56,686 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> user-agent: PostmanRuntime/7.25.0
+2020-06-24 11:37:56,686 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept: */*
+2020-06-24 11:37:56,686 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> cache-control: no-cache
+2020-06-24 11:37:56,686 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> postman-token: cd784284-575d-4750-a528-d73cb102d3c5
+2020-06-24 11:37:56,687 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> host: 127.0.0.1:8881
+2020-06-24 11:37:56,687 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-06-24 11:37:56,687 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> connection: keep-alive
+2020-06-24 11:37:56,687 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-length: 87
+2020-06-24 11:37:56,687 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|>
+2020-06-24 11:37:56,688 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-06-24 11:37:56,688 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Ip Adress '127.0.0.1' is valid
+2020-06-24 11:37:56,688 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Processing authentication for 'http://127.0.0.1:8881/login' ...
+2020-06-24 11:37:56,688 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] The request header is 'null'
+2020-06-24 11:37:56,689 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Looking for the header start with 'PGW'
+2020-06-24 11:37:56,689 WARN com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] couldn't find PGW string, will ignore the header
+2020-06-24 11:37:57,733 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> {
+2020-06-24 11:37:57,734 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"username": "pgw_fptplay",
+2020-06-24 11:37:57,734 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"password": "F311P@ay2o201446!@#",
+2020-06-24 11:37:57,734 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service": "login"
+2020-06-24 11:37:57,734 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> }
+2020-06-24 11:37:57,734 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< 200 OK
+2020-06-24 11:37:57,735 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|<
+2020-06-24 11:38:33,091 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] Routing file updated
+2020-06-24 11:38:33,114 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] New routes created.
+2020-06-24 11:38:47,294 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> POST /login
+2020-06-24 11:38:47,297 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-type: application/json
+2020-06-24 11:38:47,297 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.25.0
+2020-06-24 11:38:47,298 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept: */*
+2020-06-24 11:38:47,298 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-06-24 11:38:47,298 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> postman-token: e2a57eec-b24d-43f3-b7b5-25f6baa741a3
+2020-06-24 11:38:47,298 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> host: 127.0.0.1:8881
+2020-06-24 11:38:47,299 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-06-24 11:38:47,299 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> connection: keep-alive
+2020-06-24 11:38:47,299 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-length: 87
+2020-06-24 11:38:47,299 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>
+2020-06-24 11:38:47,299 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-06-24 11:38:47,300 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Ip Adress '127.0.0.1' is valid
+2020-06-24 11:38:47,300 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Processing authentication for 'http://127.0.0.1:8881/login' ...
+2020-06-24 11:38:47,300 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] The request header is 'null'
+2020-06-24 11:38:47,300 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Looking for the header start with 'PGW'
+2020-06-24 11:38:47,300 WARN com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] couldn't find PGW string, will ignore the header
+2020-06-24 11:38:48,427 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> {
+2020-06-24 11:38:48,428 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"username": "pgw_fptplay",
+2020-06-24 11:38:48,429 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"password": "F311P@ay2o201446!@#",
+2020-06-24 11:38:48,430 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service": "login"
+2020-06-24 11:38:48,431 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> }
+2020-06-24 11:38:48,432 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< 200 OK
+2020-06-24 11:38:48,433 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|<
+2020-06-24 11:39:09,482 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] Routing file updated
+2020-06-24 11:39:09,503 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] New routes created.
+2020-06-24 11:42:37,860 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] Routing file updated
+2020-06-24 11:42:37,898 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] New routes created.
+2020-06-24 11:43:14,789 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> POST /payment/apigw
+2020-06-24 11:43:14,791 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MzgzNzY3NywiaWF0IjoxNTkyOTczNjc3fQ.UJDndecD72PMGHekU6N7QQ5N062t_lYHlA5GG5zCv5KYn87YQOvLaTpPTWf9JMrslhJ2AHmsQMv6LVmM-8Y-FQ
+2020-06-24 11:43:14,793 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-type: application/json
+2020-06-24 11:43:14,794 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> user-agent: PostmanRuntime/7.25.0
+2020-06-24 11:43:14,795 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept: */*
+2020-06-24 11:43:14,795 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> cache-control: no-cache
+2020-06-24 11:43:14,796 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> postman-token: 15142543-a108-49fd-a804-261597fc6b4a
+2020-06-24 11:43:14,796 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> host: 127.0.0.1:8881
+2020-06-24 11:43:14,796 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-06-24 11:43:14,796 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> connection: keep-alive
+2020-06-24 11:43:14,796 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-length: 225
+2020-06-24 11:43:14,797 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|>
+2020-06-24 11:43:14,797 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-06-24 11:43:14,797 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Ip Adress '127.0.0.1' is valid
+2020-06-24 11:43:14,798 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-06-24 11:43:14,798 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MzgzNzY3NywiaWF0IjoxNTkyOTczNjc3fQ.UJDndecD72PMGHekU6N7QQ5N062t_lYHlA5GG5zCv5KYn87YQOvLaTpPTWf9JMrslhJ2AHmsQMv6LVmM-8Y-FQ'
+2020-06-24 11:43:14,798 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Looking for the header start with 'PGW'
+2020-06-24 11:43:14,901 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] checking authentication for user 'pgw_fptplay'
+2020-06-24 11:43:14,902 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] security context was null, so authorizating user
+2020-06-24 11:43:14,902 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-06-24 11:43:14,902 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-06-24 11:43:14,917 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] authorizated user 'pgw_fptplay', setting security context
+2020-06-24 11:43:14,995 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-2] Remote request body is ' {"service":"charge","telco":"vinaphone","cp_code":"001","service_code":"FPTPLAY","service_id":"FPTPLAYID","package_code":"TQCN","msisdn":"0843052080","account":"0843052080","cmd":"RENEW","trans_id":"1590137531-117208501234"}'
+2020-06-24 11:43:16,022 ERROR com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-2] [doMainURLAction] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection'
+2020-06-24 11:43:16,043 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|>  {"service":"charge","telco":"vinaphone","cp_code":"001","service_code":"FPTPLAY","service_id":"FPTPLAYID","package_code":"TQCN","msisdn":"0843052080","account":"0843052080","cmd":"RENEW","trans_id":"1590137531-117208501234"}
+2020-06-24 11:43:16,044 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< 200 OK
+2020-06-24 11:43:16,045 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|<
+2020-06-24 11:44:18,434 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] Received a new notification...
+2020-06-24 11:44:18,443 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='PAYMENT_NOTIFICATION_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='PAYMENT_NOTIFICATION_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='DELTADIGITALVN', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='TQCN', msisdn='0843052080', account='0843052080',cmd='null',trans_id='',price='2000',evenTime='2020-06-05 15:27:11',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='202006241144182246092213', dbId='5ef2da2240fedf3b451a9a8c'}'}
+2020-06-24 11:44:18,444 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] doing cp payment notification...
+2020-06-24 11:44:19,466 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection'
+2020-06-24 11:44:20,476 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+2020-06-24 11:46:04,044 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] Received a new notification...
+2020-06-24 11:46:04,064 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='PAYMENT_NOTIFICATION_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE.REMOVE', channel='vinaphone', msg='MSG {msgType='PAYMENT_NOTIFICATION_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='DELTADIGITALVN', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='TQCN', msisdn='0843052080', account='0843052080',cmd='null',trans_id='',price='2000',evenTime='2020-06-05 15:27:11',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='202006241146038759802809', dbId='5ef2da8b40fedf3b451a9a8d'}'}
+2020-06-24 11:46:04,065 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] doing cp payment notification...
+2020-06-24 11:46:05,108 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection'
+2020-06-24 11:46:06,121 ERROR com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpPaymentNotification] Exception: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+2020-06-24 11:50:08,462 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> POST /payment/apigw
+2020-06-24 11:50:08,473 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MzgzNzY3NywiaWF0IjoxNTkyOTczNjc3fQ.UJDndecD72PMGHekU6N7QQ5N062t_lYHlA5GG5zCv5KYn87YQOvLaTpPTWf9JMrslhJ2AHmsQMv6LVmM-8Y-FQ
+2020-06-24 11:50:08,473 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> content-type: application/json
+2020-06-24 11:50:08,474 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> user-agent: PostmanRuntime/7.25.0
+2020-06-24 11:50:08,474 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> accept: */*
+2020-06-24 11:50:08,474 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> cache-control: no-cache
+2020-06-24 11:50:08,474 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> postman-token: 41f5103b-e9a5-4b18-ad84-5271ffde19ce
+2020-06-24 11:50:08,475 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> host: 127.0.0.1:8881
+2020-06-24 11:50:08,475 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-06-24 11:50:08,475 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> connection: keep-alive
+2020-06-24 11:50:08,476 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> content-length: 225
+2020-06-24 11:50:08,477 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|>
+2020-06-24 11:50:08,477 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-06-24 11:50:08,479 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] Ip Adress '127.0.0.1' is valid
+2020-06-24 11:50:08,481 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-06-24 11:50:08,484 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MzgzNzY3NywiaWF0IjoxNTkyOTczNjc3fQ.UJDndecD72PMGHekU6N7QQ5N062t_lYHlA5GG5zCv5KYn87YQOvLaTpPTWf9JMrslhJ2AHmsQMv6LVmM-8Y-FQ'
+2020-06-24 11:50:08,486 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] Looking for the header start with 'PGW'
+2020-06-24 11:50:08,552 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] checking authentication for user 'pgw_fptplay'
+2020-06-24 11:50:08,552 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] security context was null, so authorizating user
+2020-06-24 11:50:08,553 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-3] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-06-24 11:50:08,557 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-3] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-06-24 11:50:08,570 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] authorizated user 'pgw_fptplay', setting security context
+2020-06-24 11:50:08,616 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-3] Remote request body is ' {"service":"charge","telco":"vinaphone","cp_code":"001","service_code":"FPTPLAY","service_id":"FPTPLAYID","package_code":"TQCN","msisdn":"0843052080","account":"0843052080","cmd":"RENEW","trans_id":"1590137531-117208501234"}'
+2020-06-24 11:50:09,642 ERROR com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-3] [doMainURLAction] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection'
+2020-06-24 11:50:09,646 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|>  {"service":"charge","telco":"vinaphone","cp_code":"001","service_code":"FPTPLAY","service_id":"FPTPLAYID","package_code":"TQCN","msisdn":"0843052080","account":"0843052080","cmd":"RENEW","trans_id":"1590137531-117208501234"}
+2020-06-24 11:50:09,647 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|< 200 OK
+2020-06-24 11:50:09,649 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|<
+2020-06-24 11:50:34,024 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> POST /payment/apigw
+2020-06-24 11:50:34,025 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MzgzNzY3NywiaWF0IjoxNTkyOTczNjc3fQ.UJDndecD72PMGHekU6N7QQ5N062t_lYHlA5GG5zCv5KYn87YQOvLaTpPTWf9JMrslhJ2AHmsQMv6LVmM-8Y-FQ
+2020-06-24 11:50:34,033 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> content-type: application/json
+2020-06-24 11:50:34,035 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> user-agent: PostmanRuntime/7.25.0
+2020-06-24 11:50:34,035 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> accept: */*
+2020-06-24 11:50:34,038 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> cache-control: no-cache
+2020-06-24 11:50:34,039 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> postman-token: c529ea9a-c105-40cd-ab8c-78329932e666
+2020-06-24 11:50:34,040 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> host: 127.0.0.1:8881
+2020-06-24 11:50:34,040 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-06-24 11:50:34,040 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> connection: keep-alive
+2020-06-24 11:50:34,041 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> content-length: 228
+2020-06-24 11:50:34,041 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|>
+2020-06-24 11:50:34,041 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-06-24 11:50:34,041 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] Ip Adress '127.0.0.1' is valid
+2020-06-24 11:50:34,041 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-4] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-06-24 11:50:34,042 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-4] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MzgzNzY3NywiaWF0IjoxNTkyOTczNjc3fQ.UJDndecD72PMGHekU6N7QQ5N062t_lYHlA5GG5zCv5KYn87YQOvLaTpPTWf9JMrslhJ2AHmsQMv6LVmM-8Y-FQ'
+2020-06-24 11:50:34,042 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-4] Looking for the header start with 'PGW'
+2020-06-24 11:50:34,045 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-4] checking authentication for user 'pgw_fptplay'
+2020-06-24 11:50:34,045 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-4] security context was null, so authorizating user
+2020-06-24 11:50:34,045 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-4] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-06-24 11:50:34,046 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-4] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-06-24 11:50:34,055 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-4] authorizated user 'pgw_fptplay', setting security context
+2020-06-24 11:50:34,058 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-4] Remote request body is ' {"service":"charge","telco":"vinaphone","cp_code":"001","service_code":"FPTPLAY","service_id":"FPTPLAYID","package_code":"TQCN","msisdn":"0843052080","account":"0843052080","cmd":"DOWNLOAD","trans_id":"1590137531-117208501234"}'
+2020-06-24 11:50:35,075 ERROR com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-4] [doMainURLAction] Exception: 'Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection'
+2020-06-24 11:50:35,078 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|>  {"service":"charge","telco":"vinaphone","cp_code":"001","service_code":"FPTPLAY","service_id":"FPTPLAYID","package_code":"TQCN","msisdn":"0843052080","account":"0843052080","cmd":"DOWNLOAD","trans_id":"1590137531-117208501234"}
+2020-06-24 11:50:35,079 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|< 200 OK
+2020-06-24 11:50:35,079 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|<
+2020-06-24 11:50:59,586 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] Routing file updated
+2020-06-24 11:50:59,610 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] New routes created.
+2020-06-24 11:52:38,469 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-6-thread-1] Routing file updated
+2020-06-24 11:52:38,484 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-6-thread-1] New routes created.
+2020-06-24 11:52:42,289 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> POST /payment/apigw
+2020-06-24 11:52:42,290 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MzgzNzY3NywiaWF0IjoxNTkyOTczNjc3fQ.UJDndecD72PMGHekU6N7QQ5N062t_lYHlA5GG5zCv5KYn87YQOvLaTpPTWf9JMrslhJ2AHmsQMv6LVmM-8Y-FQ
+2020-06-24 11:52:42,290 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-type: application/json
+2020-06-24 11:52:42,290 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.25.0
+2020-06-24 11:52:42,291 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept: */*
+2020-06-24 11:52:42,291 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-06-24 11:52:42,291 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> postman-token: 1c839c11-b17f-4fe9-aefd-f22be7ce69b2
+2020-06-24 11:52:42,291 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> host: 127.0.0.1:8881
+2020-06-24 11:52:42,292 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-06-24 11:52:42,292 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> connection: keep-alive
+2020-06-24 11:52:42,292 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-length: 228
+2020-06-24 11:52:42,292 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>
+2020-06-24 11:52:42,292 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-06-24 11:52:42,292 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Ip Adress '127.0.0.1' is valid
+2020-06-24 11:52:42,293 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-06-24 11:52:42,293 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MzgzNzY3NywiaWF0IjoxNTkyOTczNjc3fQ.UJDndecD72PMGHekU6N7QQ5N062t_lYHlA5GG5zCv5KYn87YQOvLaTpPTWf9JMrslhJ2AHmsQMv6LVmM-8Y-FQ'
+2020-06-24 11:52:42,293 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Looking for the header start with 'PGW'
+2020-06-24 11:52:42,342 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] checking authentication for user 'pgw_fptplay'
+2020-06-24 11:52:42,343 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] security context was null, so authorizating user
+2020-06-24 11:52:42,343 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-06-24 11:52:42,343 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-06-24 11:52:42,348 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] authorizated user 'pgw_fptplay', setting security context
+2020-06-24 11:52:42,380 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-1] Remote request body is ' {"service":"charge","telco":"vinaphone","cp_code":"001","service_code":"FPTPLAY","service_id":"FPTPLAYID","package_code":"TQCN","msisdn":"0843052080","account":"0843052080","cmd":"DOWNLOAD","trans_id":"1590137531-117208501234"}'
+2020-06-24 11:52:42,400 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] Service from the request is 'charge'
+2020-06-24 11:52:42,431 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] [doTelcoCharge] doing telco charging. Msg = TelcoChargeRequest {cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='TQCN', msisdn='0843052080', account='0843052080',cmd='DOWNLOAD',trans_id='1590137531-117208501234',datetime='null'}
+2020-06-24 11:52:42,437 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Starting to check request: 1590137531-117208501234
+2020-06-24 11:52:42,437 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Result: true
+2020-06-24 11:52:42,438 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Starting to check request: 1590137531-117208501234
+2020-06-24 11:52:42,438 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Result: true
+2020-06-24 11:52:42,538 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [insertRequest][to DB] Result ID: 5ef2dc1a40fedf446f5e28d9
+2020-06-24 11:52:42,539 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', channel='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='DOWNLOAD', status_process='0', msgRxTime='null', msgRtTime='Wed Jun 24 11:52:42 ICT 2020', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='TQCN', msisdn='0843052080', account='0843052080',cmd='DOWNLOAD',trans_id='1590137531-117208501234',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='null', dbId='5ef2dc1a40fedf446f5e28d9'}'}
+2020-06-24 11:52:42,540 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] msgKeyword = DOWNLOAD
+2020-06-24 11:52:42,540 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] no matching keyword found
+2020-06-24 11:52:42,542 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] msgKeyword = DOWNLOAD
+2020-06-24 11:52:42,542 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = DOWNLOAD
+2020-06-24 11:52:42,577 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', channel='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='DOWNLOAD', status_process='0', msgRxTime='null', msgRtTime='Wed Jun 24 11:52:42 ICT 2020', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='TQCN', msisdn='0843052080', account='0843052080',cmd='DOWNLOAD',trans_id='1590137531-117208501234',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='null', dbId='5ef2dc1a40fedf446f5e28d9'}'}
+2020-06-24 11:52:42,623 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dc1a40fedf446f5e28d9] from db
+2020-06-24 11:52:43,631 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dc1a40fedf446f5e28d9] from db
+2020-06-24 11:52:44,638 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dc1a40fedf446f5e28d9] from db
+2020-06-24 11:52:45,645 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dc1a40fedf446f5e28d9] from db
+2020-06-24 11:52:45,649 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-06-24 11:52:45,681 ERROR com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [deleteRecord] The request 5ef2dc1a40fedf446f5e28d9 is deleted completely!
+2020-06-24 11:52:45,696 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>  {"service":"charge","telco":"vinaphone","cp_code":"001","service_code":"FPTPLAY","service_id":"FPTPLAYID","package_code":"TQCN","msisdn":"0843052080","account":"0843052080","cmd":"DOWNLOAD","trans_id":"1590137531-117208501234"}
+2020-06-24 11:52:45,696 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< 200 OK
+2020-06-24 11:52:45,697 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|<
+2020-06-24 11:52:45,697 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< {"error_code":-1,"trans_id":"1590137531-117208501234"}
+2020-06-24 11:57:37,874 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] Routing file updated
+2020-06-24 11:57:37,901 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] New routes created.
+2020-06-24 11:58:35,321 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> POST /payment/apigw
+2020-06-24 11:58:35,324 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MzgzNzY3NywiaWF0IjoxNTkyOTczNjc3fQ.UJDndecD72PMGHekU6N7QQ5N062t_lYHlA5GG5zCv5KYn87YQOvLaTpPTWf9JMrslhJ2AHmsQMv6LVmM-8Y-FQ
+2020-06-24 11:58:35,325 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> content-type: application/json
+2020-06-24 11:58:35,325 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.25.0
+2020-06-24 11:58:35,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> accept: */*
+2020-06-24 11:58:35,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-06-24 11:58:35,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> postman-token: 6341e5af-d14f-4cff-b27c-4a6983048e4a
+2020-06-24 11:58:35,328 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> host: 127.0.0.1:8882
+2020-06-24 11:58:35,328 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-06-24 11:58:35,329 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> connection: keep-alive
+2020-06-24 11:58:35,331 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> content-length: 225
+2020-06-24 11:58:35,332 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|>
+2020-06-24 11:58:35,333 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-06-24 11:58:35,333 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] Ip Adress '127.0.0.1' is valid
+2020-06-24 11:58:35,333 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-1] Processing authentication for 'http://127.0.0.1:8882/payment/apigw' ...
+2020-06-24 11:58:35,334 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-1] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MzgzNzY3NywiaWF0IjoxNTkyOTczNjc3fQ.UJDndecD72PMGHekU6N7QQ5N062t_lYHlA5GG5zCv5KYn87YQOvLaTpPTWf9JMrslhJ2AHmsQMv6LVmM-8Y-FQ'
+2020-06-24 11:58:35,334 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-1] Looking for the header start with 'PGW'
+2020-06-24 11:58:35,459 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-1] checking authentication for user 'pgw_fptplay'
+2020-06-24 11:58:35,459 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-1] security context was null, so authorizating user
+2020-06-24 11:58:35,459 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8882-exec-1] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-06-24 11:58:35,460 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8882-exec-1] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-06-24 11:58:35,478 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-1] authorizated user 'pgw_fptplay', setting security context
+2020-06-24 11:58:35,717 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8882-exec-1] Remote request body is ' {"service":"charge","telco":"vinaphone","cp_code":"001","service_code":"FPTPLAY","service_id":"FPTPLAYID","package_code":"TQCN","msisdn":"0843052080","account":"0843052080","cmd":"RENEW","trans_id":"1590137531-117208501234"}'
+2020-06-24 11:58:35,827 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8882-exec-1] Service from the request is 'charge'
+2020-06-24 11:58:36,055 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8882-exec-1] [doTelcoCharge] doing telco charging. Msg = TelcoChargeRequest {cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='TQCN', msisdn='0843052080', account='0843052080',cmd='RENEW',trans_id='1590137531-117208501234',datetime='null'}
+2020-06-24 11:58:36,063 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [verifyParameter] Starting to check request: 1590137531-117208501234
+2020-06-24 11:58:36,063 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [verifyParameter] Result: true
+2020-06-24 11:58:36,064 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [verifyRequestCredentials] Starting to check request: 1590137531-117208501234
+2020-06-24 11:58:36,064 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [verifyRequestCredentials] Result: true
+2020-06-24 11:58:36,215 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [insertRequest][to DB] Result ID: 5ef2dd7c40fedf49484c7247
+2020-06-24 11:58:36,216 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8882-exec-1] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', channel='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='RENEW', status_process='0', msgRxTime='null', msgRtTime='Wed Jun 24 11:58:36 ICT 2020', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='TQCN', msisdn='0843052080', account='0843052080',cmd='RENEW',trans_id='1590137531-117208501234',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='null', dbId='5ef2dd7c40fedf49484c7247'}'}
+2020-06-24 11:58:36,220 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8882-exec-1] msgKeyword = RENEW
+2020-06-24 11:58:36,221 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8882-exec-1] Destination found: name = PAYMENTGW.TELCO.RENEW.REQUEST.VINAPHONE, keyword = RENEW
+2020-06-24 11:58:36,254 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8882-exec-1] Msg sent to queue[queue:'PAYMENTGW.TELCO.RENEW.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY.RENEWCHARGING', channel='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='RENEW', status_process='0', msgRxTime='null', msgRtTime='Wed Jun 24 11:58:36 ICT 2020', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='TQCN', msisdn='0843052080', account='0843052080',cmd='RENEW',trans_id='1590137531-117208501234',price='0',evenTime='null',errorCode='0', packageExpiredTime='null', renewCycleDay='0', shortCode='null', content='null', mo_id='null', originalRequestId='null', dbId='5ef2dd7c40fedf49484c7247'}'}
+2020-06-24 11:58:36,331 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:37,342 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:38,344 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:39,357 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:40,361 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:41,365 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:42,373 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:43,386 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:44,394 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:45,403 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:46,409 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:47,419 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:48,425 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:49,430 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:50,435 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:51,440 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:52,447 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:53,455 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:54,461 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:55,466 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:56,477 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:57,482 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:58,490 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:58:59,497 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:59:00,505 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:59:01,512 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:59:02,522 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:59:03,528 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:59:04,535 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:59:05,542 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:59:06,550 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] starting to select result of the request [5ef2dd7c40fedf49484c7247] from db
+2020-06-24 11:59:06,554 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-06-24 11:59:06,568 ERROR com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8882-exec-1] [deleteRecord] The request 5ef2dd7c40fedf49484c7247 is deleted completely!
+2020-06-24 11:59:06,586 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|>  {"service":"charge","telco":"vinaphone","cp_code":"001","service_code":"FPTPLAY","service_id":"FPTPLAYID","package_code":"TQCN","msisdn":"0843052080","account":"0843052080","cmd":"RENEW","trans_id":"1590137531-117208501234"}
+2020-06-24 11:59:06,587 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|< 200 OK
+2020-06-24 11:59:06,588 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|<
+2020-06-24 11:59:06,588 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|< {"error_code":-1,"trans_id":"1590137531-117208501234"}
+2020-06-24 11:59:13,487 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-6-thread-1] Routing file updated
+2020-06-24 11:59:13,513 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-6-thread-1] New routes created.
+2020-06-24 13:23:33,830 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> POST /login
+2020-06-24 13:23:33,848 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> content-type: application/json
+2020-06-24 13:23:33,848 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.25.0
+2020-06-24 13:23:33,848 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> accept: */*
+2020-06-24 13:23:33,848 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-06-24 13:23:33,849 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> postman-token: 57d53890-cb81-452e-8ff8-d442d937d8b3
+2020-06-24 13:23:33,849 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> host: 127.0.0.1:8882
+2020-06-24 13:23:33,849 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-06-24 13:23:33,850 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> connection: keep-alive
+2020-06-24 13:23:33,851 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> content-length: 87
+2020-06-24 13:23:33,851 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|>
+2020-06-24 13:23:33,851 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-06-24 13:23:33,852 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] Ip Adress '127.0.0.1' is valid
+2020-06-24 13:23:33,854 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-1] Processing authentication for 'http://127.0.0.1:8882/login' ...
+2020-06-24 13:23:33,855 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-1] The request header is 'null'
+2020-06-24 13:23:33,855 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-1] Looking for the header start with 'PGW'
+2020-06-24 13:23:33,855 WARN com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-1] couldn't find PGW string, will ignore the header
+2020-06-24 13:23:34,247 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8882-exec-1] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-06-24 13:23:34,250 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8882-exec-1] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-06-24 13:23:34,396 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8882-exec-1] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-06-24 13:23:34,398 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8882-exec-1] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-06-24 13:23:34,444 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> {
+2020-06-24 13:23:34,444 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> 	"username": "pgw_fptplay",
+2020-06-24 13:23:34,444 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> 	"password": "F311P@ay2o201446!@#",
+2020-06-24 13:23:34,444 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> 	"service": "login"
+2020-06-24 13:23:34,445 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|> }
+2020-06-24 13:23:34,445 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|< 200 OK
+2020-06-24 13:23:34,445 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|<
+2020-06-24 13:23:34,446 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-1] 127.0.0.1|< {"error_code":0,"session":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5Mzg0MzgxNCwiaWF0IjoxNTkyOTc5ODE0fQ.FPao7KiCmFx7df1aeQF1cKANH8K-IzE8chM-XL2h0SxpoDDxG9nIvspL6ec3EBan6Fkr0G1h89t9CXy9C6yLDA","message":"Login successfully , username=pgw_fptplay"}
+2020-06-24 13:23:47,906 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> POST /login
+2020-06-24 13:23:47,908 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> content-type: application/json
+2020-06-24 13:23:47,909 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> user-agent: PostmanRuntime/7.25.0
+2020-06-24 13:23:47,909 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> accept: */*
+2020-06-24 13:23:47,909 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> cache-control: no-cache
+2020-06-24 13:23:47,909 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> postman-token: f256edff-0013-4008-89c2-99ca47c5610f
+2020-06-24 13:23:47,910 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> host: 127.0.0.1:8882
+2020-06-24 13:23:47,911 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-06-24 13:23:47,911 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> connection: keep-alive
+2020-06-24 13:23:47,912 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> content-length: 87
+2020-06-24 13:23:47,912 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|>
+2020-06-24 13:23:47,913 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-06-24 13:23:47,913 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] Ip Adress '127.0.0.1' is valid
+2020-06-24 13:23:47,913 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-2] Processing authentication for 'http://127.0.0.1:8882/login' ...
+2020-06-24 13:23:47,914 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-2] The request header is 'null'
+2020-06-24 13:23:47,915 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-2] Looking for the header start with 'PGW'
+2020-06-24 13:23:47,915 WARN com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8882-exec-2] couldn't find PGW string, will ignore the header
+2020-06-24 13:23:47,922 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8882-exec-2] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-06-24 13:23:47,923 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8882-exec-2] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-06-24 13:23:48,218 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8882-exec-2] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-06-24 13:23:48,221 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8882-exec-2] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-06-24 13:23:48,225 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> {
+2020-06-24 13:23:48,225 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> 	"username": "pgw_fptplay",
+2020-06-24 13:23:48,226 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> 	"password": "F311P@ay2o201446!@#",
+2020-06-24 13:23:48,227 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> 	"service": "login"
+2020-06-24 13:23:48,228 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|> }
+2020-06-24 13:23:48,229 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|< 200 OK
+2020-06-24 13:23:48,229 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|<
+2020-06-24 13:23:48,229 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8882-exec-2] 127.0.0.1|< {"error_code":0,"session":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5Mzg0MzgyOCwiaWF0IjoxNTkyOTc5ODI4fQ.ySCaNU0cGMRqS-RPtNpB4RKcM1ZLI0f9oJOb_WztR1-UcUADwzh743LODBu4H1ZVbZzippdapiF4b9n_N7YoWw","message":"Login successfully , username=pgw_fptplay"}
+2020-06-24 15:22:49,767 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1] Routing file updated
+2020-06-24 15:22:49,878 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1] New routes created.

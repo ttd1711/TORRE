@@ -1,0 +1,30 @@
+server:
+  port: 8181
+  
+spring:
+  application:
+    name: TORRE-APIGW
+  cloud:
+    gateway:
+      routes:
+        - id: GENOME-SERVICE
+          uri: lb://GENOME-SERVICE
+          predicates:
+            - Path=/genome/**
+        - id: OPPORTUNITY-SERVICE
+          uri: lb://OPPORTUNITY-SERVICE
+          predicates:
+            - Path=/opportunities/**
+        - id: GENOME-SERVICE
+          uri: lb://GENOME-SERVICE
+          predicates:
+            - Path=/people/**
+                
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    hostname: 127.0.0.1

@@ -1,0 +1,118 @@
+2020-05-14 00:02:42,664 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] Routing file updated
+2020-05-14 00:02:42,689 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] New routes created.
+2020-05-14 00:05:17,097 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> POST /payment/apigw
+2020-05-14 00:05:17,100 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww
+2020-05-14 00:05:17,101 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-type: application/json
+2020-05-14 00:05:17,101 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-14 00:05:17,101 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept: */*
+2020-05-14 00:05:17,102 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-05-14 00:05:17,102 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> postman-token: a8f9e3be-3f52-48a8-81fb-4437ab19e36f
+2020-05-14 00:05:17,102 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-14 00:05:17,102 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-14 00:05:17,103 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> connection: keep-alive
+2020-05-14 00:05:17,103 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-length: 237
+2020-05-14 00:05:17,103 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>
+2020-05-14 00:05:17,103 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-14 00:05:17,103 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Ip Adress '127.0.0.1' is valid
+2020-05-14 00:05:17,105 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-14 00:05:17,106 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww'
+2020-05-14 00:05:17,106 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Looking for the header start with 'PGW'
+2020-05-14 00:05:17,217 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] checking authentication for user 'pgw_fptplay'
+2020-05-14 00:05:17,218 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] security context was null, so authorizating user
+2020-05-14 00:05:17,218 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-14 00:05:17,218 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-14 00:05:17,232 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] authorizated user 'pgw_fptplay', setting security context
+2020-05-14 00:05:17,313 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-1] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117
+	"account": "dz",
+	"otp_msg": "otp1244",
+	"trans_id": "1234",
+	"service": "otp_confirm"
+}'
+2020-05-14 00:05:17,319 ERROR com.dz.apigw.utils.Utils [http-nio-8881-exec-1] [parseStrToJSONObj] Exception is 'null'
+2020-05-14 00:05:17,353 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> {
+2020-05-14 00:05:17,353 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-14 00:05:17,354 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cp_code": "001",
+2020-05-14 00:05:17,354 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-14 00:05:17,354 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-14 00:05:17,354 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-14 00:05:17,354 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"msisdn": "84982051117
+2020-05-14 00:05:17,354 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"account": "dz",
+2020-05-14 00:05:17,354 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"otp_msg": "otp1244",
+2020-05-14 00:05:17,355 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"trans_id": "1234",
+2020-05-14 00:05:17,355 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service": "otp_confirm"
+2020-05-14 00:05:17,355 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> }
+2020-05-14 00:05:17,355 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< 200 OK
+2020-05-14 00:05:17,359 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|<
+2020-05-14 00:06:49,881 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> POST /payment/apigw
+2020-05-14 00:06:49,881 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww
+2020-05-14 00:06:49,882 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> content-type: application/json
+2020-05-14 00:06:49,882 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-14 00:06:49,882 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> accept: */*
+2020-05-14 00:06:49,882 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> cache-control: no-cache
+2020-05-14 00:06:49,882 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> postman-token: d172d0b8-d28f-4fb3-bd92-811b46aed722
+2020-05-14 00:06:49,882 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-14 00:06:49,882 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-14 00:06:49,882 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> connection: keep-alive
+2020-05-14 00:06:49,883 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> content-length: 239
+2020-05-14 00:06:49,883 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|>
+2020-05-14 00:06:49,883 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-14 00:06:49,883 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] Ip Adress '127.0.0.1' is valid
+2020-05-14 00:06:49,883 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-14 00:06:49,883 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww'
+2020-05-14 00:06:49,883 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] Looking for the header start with 'PGW'
+2020-05-14 00:06:49,885 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] checking authentication for user 'pgw_fptplay'
+2020-05-14 00:06:49,885 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] security context was null, so authorizating user
+2020-05-14 00:06:49,885 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-3] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-14 00:06:49,886 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-3] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-14 00:06:49,891 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] authorizated user 'pgw_fptplay', setting security context
+2020-05-14 00:06:49,893 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-3] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"otp_msg": "otp1244",
+	"trans_id": "1234",
+	"service": "otp_confirm"
+}'
+2020-05-14 00:06:49,906 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-3] Service from the request is 'otp_confirm'
+2020-05-14 00:06:49,925 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-3] [doOTPConfirm] doing otp confirm...
+2020-05-14 00:06:49,928 INFO com.dz.apigw.services.OTPConfirmServiceImpl [http-nio-8881-exec-3] [verifyParameter] Starting to check request: 1234
+2020-05-14 00:06:49,929 INFO com.dz.apigw.services.OTPConfirmServiceImpl [http-nio-8881-exec-3] [verifyParameter] Result: true
+2020-05-14 00:06:49,930 INFO com.dz.apigw.services.OTPConfirmServiceImpl [http-nio-8881-exec-3] [verifyRequestCredentials] Starting to check request: 1234
+2020-05-14 00:06:49,930 INFO com.dz.apigw.services.OTPConfirmServiceImpl [http-nio-8881-exec-3] [verifyRequestCredentials] Result: true
+2020-05-14 00:06:49,932 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-3] Send msg = Notification {notificationType='OTP_CONFIRM_REQUEST', destinationQueueName='null', msg='APIGWLogDocument {msgType='OTPCONFIRM_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='otp_confirm', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='null',trans_id='1234'}'}
+2020-05-14 00:06:49,933 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-3] msgKeyword = null
+2020-05-14 00:06:49,933 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-3] Destination found: name = PAYMENTGW.TELCO.OTPCONFIRM.REQUEST.VINAPHONE, keyword = null
+2020-05-14 00:06:49,960 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-3] Msg sent to queue[queue:'PAYMENTGW.TELCO.OTPCONFIRM.REQUEST.VINAPHONE']= Notification {notificationType='OTP_CONFIRM_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='APIGWLogDocument {msgType='OTPCONFIRM_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='otp_confirm', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='null',trans_id='1234'}'}
+2020-05-14 00:06:49,993 INFO com.dz.apigw.services.OTPConfirmServiceImpl [http-nio-8881-exec-3] [insertRequest][to DB] Result ID: 5ebc2929226bfb43903db247
+2020-05-14 00:06:49,994 INFO com.dz.apigw.services.OTPConfirmServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ebc2929226bfb43903db247] from db
+2020-05-14 00:06:51,079 INFO com.dz.apigw.services.OTPConfirmServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ebc2929226bfb43903db247] from db
+2020-05-14 00:06:52,084 INFO com.dz.apigw.services.OTPConfirmServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ebc2929226bfb43903db247] from db
+2020-05-14 00:06:53,089 INFO com.dz.apigw.services.OTPConfirmServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ebc2929226bfb43903db247] from db
+2020-05-14 00:06:53,094 WARN com.dz.apigw.services.OTPConfirmServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-05-14 00:06:53,116 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> {
+2020-05-14 00:06:53,116 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-14 00:06:53,116 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"cp_code": "001",
+2020-05-14 00:06:53,116 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-14 00:06:53,117 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-14 00:06:53,117 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-14 00:06:53,117 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-14 00:06:53,117 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"account": "dz",
+2020-05-14 00:06:53,117 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"otp_msg": "otp1244",
+2020-05-14 00:06:53,117 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"trans_id": "1234",
+2020-05-14 00:06:53,117 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"service": "otp_confirm"
+2020-05-14 00:06:53,118 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> }
+2020-05-14 00:06:53,118 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|< 200 OK
+2020-05-14 00:06:53,118 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|<
+2020-05-14 00:06:53,118 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|< {"error_code":-1,"trans_id":"1234","message":null}
+2020-05-14 00:14:34,859 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-6-thread-1] Routing file updated
+2020-05-14 00:14:34,869 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-6-thread-1] New routes created.

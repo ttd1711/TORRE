@@ -1,0 +1,19 @@
+server:
+  port: 8001
+  
+spring:
+  application:
+    name: GENOME-SERVICE
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    hostname: 127.0.0.1
+
+torre:
+  genome-api-url: https://torre.bio/api/bios/
+  people-search-api-url: https://search.torre.co/people/_search/

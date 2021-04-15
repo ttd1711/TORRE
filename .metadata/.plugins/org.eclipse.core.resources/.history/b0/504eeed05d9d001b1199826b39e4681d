@@ -1,0 +1,15 @@
+package com.dzung.torre.genome.object;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class PeopleRequest {
+	
+	private Integer offset;
+	private Integer size;
+	private boolean aggregate;
+}

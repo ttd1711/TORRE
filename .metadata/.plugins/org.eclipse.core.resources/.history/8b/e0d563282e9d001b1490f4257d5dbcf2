@@ -1,0 +1,5 @@
+package com.dzung.torre.genome.entity;
+
+public class Person {
+
+}

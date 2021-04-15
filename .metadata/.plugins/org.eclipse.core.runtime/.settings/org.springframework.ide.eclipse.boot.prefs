@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.actuator=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-gateway=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=1
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=torre-apigw
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=2.4.4.RELEASE
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=Torre APIGW
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=com.dzung
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=1.8
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=torre-apigw
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=com.dzung.torre
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=jar
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.version=0.0.1-TORRE
+org.springframework.ide.eclipse.boot.wizard.initializr.url=https\://start.spring.io\n

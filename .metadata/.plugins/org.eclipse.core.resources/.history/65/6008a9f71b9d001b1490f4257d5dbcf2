@@ -1,0 +1,23 @@
+package com.dzung.torre.genome.service;
+
+import org.springframework.stereotype.Service;
+
+import com.dzung.torre.genome.entity.Genome;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class GenomeService {
+
+	public Genome findGenomeByIUsername(String genomeUsername) {
+		log.info("[findGenomeByIUsername] find username = {} by calling API", genomeUsername);
+		//call Torre API
+		
+		//
+				
+		
+		return null;
+	}
+
+}

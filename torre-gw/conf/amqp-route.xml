@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- VINAPHONE RENEW CHARGING -->
+    <dest name="PAYMENTGW.TELCO.RENEW.REQUEST.VINAPHONE"        type="TELCOCHARGE_REQUEST">
+        <rte> 
+        	<telco>vinaphone</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword>RENEW</keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>
+    <!-- VINAPHONE CHARGING -->
+    <dest name="PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE"        type="TELCOCHARGE_REQUEST">
+        <rte> 
+        	<telco>vinaphone</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword>DOWNLOAD,REGISTER,CANCEL</keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>
+    <!-- VIETTEL CHARGING -->
+    <dest name="PAYMENTGW.TELCO.CHARGING.REQUEST.VIETTEL.MPS"        type="TELCOCHARGE_REQUEST">
+        <rte> 
+        	<telco>viettel</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword>DOWNLOAD,REGISTER,CANCEL</keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>
+    <!-- VINAPHONE CHARGING -->
+    <dest name="PAYMENTGW.TELCO.OTPCONFIRM.REQUEST.VINAPHONE"        type="OTPCONFIRM_REQUEST">
+        <rte> 
+        	<telco>vinaphone</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword></keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>
+    <!-- VINAPHONE CHARGING -->
+    <dest name="PAYMENTGW.TELCO.OTPCONFIRM.REQUEST.VIETTEL.MPS"        type="OTPCONFIRM_REQUEST">
+        <rte> 
+        	<telco>viettel</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword></keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>
+
+    <dest name="PAYMENTGW.APIGW.FPTPLAY.ACCOUNT_CHECKING"        type="INIT">
+        <rte> 
+        	<telco>vinaphone</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword></keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>    
+    <dest name="PAYMENTGW.APIGW.FPTPLAY.PAYMENT_NOTIFICATION"        type="INIT">
+        <rte> 
+        	<telco>vinaphone</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword></keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>    
+    <dest name="PAYMENTGW.TELCO.MT.REQUEST.VINAPHONE"        type="MT_REQUEST">
+        <rte> 
+        	<telco></telco>
+       		<msisdn></msisdn>
+			<short-code>9046</short-code> 
+        	<keyword></keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>   
+</root>

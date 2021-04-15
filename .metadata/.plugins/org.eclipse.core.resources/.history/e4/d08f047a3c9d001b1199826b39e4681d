@@ -1,0 +1,22 @@
+package com.dzung.torre.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@Controller
+@AllArgsConstructor
+@NoArgsConstructor
+public class MainController {
+	private String appName;
+	
+	@GetMapping("/")
+	public String pageIndex(Model model) {
+		model.addAttribute("appName", this.appName);
+		
+		return "index";
+	}
+}

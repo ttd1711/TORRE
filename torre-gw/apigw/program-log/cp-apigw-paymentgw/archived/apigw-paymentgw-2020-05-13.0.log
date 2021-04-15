@@ -1,0 +1,6 @@
+2020-05-13 00:26:01,174 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1] Routing file updated
+2020-05-13 00:26:01,226 DEBUG com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1] Deleting routes:
+2020-05-13 00:26:01,270 DEBUG com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1]   closed: PAYMENTGW.TELCO.REQUEST.VINAPHONE
+2020-05-13 00:26:01,273 DEBUG com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1]   closed: PAYMENTGW.TELCO.REQUEST.VINAPHONE
+2020-05-13 00:26:01,274 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1] Old routes deleted.
+2020-05-13 00:26:01,284 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1] New routes created.

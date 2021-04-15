@@ -1,0 +1,57 @@
+package com.dzung.torre.genome.object;
+
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ResultPeople {
+	private Meta _meta;
+	private Compensations compensations;
+	private List<Skill> skill;
+	private List<CompensationRange> compensationrange;
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private class Meta {
+		private String filter;
+	}
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private class Compensations {
+		private CompensationInfo freelancer;
+		private CompensationInfo intern;
+		private CompensationInfo employee;
+		
+		@Data
+		@AllArgsConstructor
+		@NoArgsConstructor
+		private class CompensationInfo {
+			private long amount;
+			private String currency;
+			private String periodicity;
+		}
+	}
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class Skill {
+		private int total;
+		private String value;
+	}
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class CompensationRange {
+		private int total;
+		private String value;
+	}}

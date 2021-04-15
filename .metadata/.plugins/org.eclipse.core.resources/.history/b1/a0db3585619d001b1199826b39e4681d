@@ -1,0 +1,19 @@
+package com.dzung.torre.genome.object;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class PeopleApiObj {
+	
+	private Aggregator aggregators;
+
+	@Override
+	public String toString() {
+		return "Genome [person=" + person.toString() + "]";
+	}
+	
+}

@@ -1,0 +1,322 @@
+2020-05-15 16:34:35,662 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] Routing file updated
+2020-05-15 16:34:35,703 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] New routes created.
+2020-05-15 16:45:57,375 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> POST /payment/apigw
+2020-05-15 16:45:57,377 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww
+2020-05-15 16:45:57,379 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-type: application/json
+2020-05-15 16:45:57,379 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-15 16:45:57,379 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept: */*
+2020-05-15 16:45:57,379 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-05-15 16:45:57,380 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> postman-token: e6596770-8022-45a6-8f06-77432c12d343
+2020-05-15 16:45:57,380 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-15 16:45:57,381 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-15 16:45:57,381 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> connection: keep-alive
+2020-05-15 16:45:57,381 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-length: 231
+2020-05-15 16:45:57,381 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>
+2020-05-15 16:45:57,382 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-15 16:45:57,382 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Ip Adress '127.0.0.1' is valid
+2020-05-15 16:45:57,382 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-15 16:45:57,383 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww'
+2020-05-15 16:45:57,383 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Looking for the header start with 'PGW'
+2020-05-15 16:45:57,490 WARN com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] the token is expired and not valid anymore
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2020-05-14T14:56:38Z. Current time: 2020-05-15T16:45:57Z, a difference of 92959482 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.dz.apigw.security.JwtTokenUtil.getAllClaimsFromToken(JwtTokenUtil.java:56)
+	at com.dz.apigw.security.JwtTokenUtil.getClaimFromToken(JwtTokenUtil.java:49)
+	at com.dz.apigw.security.JwtTokenUtil.getUsernameFromToken(JwtTokenUtil.java:37)
+	at com.dz.apigw.security.JwtAuthorizationTokenFilter.doFilterInternal(JwtAuthorizationTokenFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at com.dz.apigw.security.AuthorizationIPAddressFilter.doFilterWrapped(AuthorizationIPAddressFilter.java:83)
+	at com.dz.apigw.security.AuthorizationIPAddressFilter.doFilterInternal(AuthorizationIPAddressFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-15 16:45:57,501 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< 401 Unauthorized
+2020-05-15 16:45:57,502 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< X-Content-Type-Options: nosniff
+2020-05-15 16:45:57,503 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< X-XSS-Protection: 1; mode=block
+2020-05-15 16:45:57,503 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2020-05-15 16:45:57,503 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< Pragma: no-cache
+2020-05-15 16:45:57,503 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< Expires: 0
+2020-05-15 16:45:57,504 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< X-Frame-Options: SAMEORIGIN
+2020-05-15 16:45:57,504 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|<
+2020-05-15 16:46:20,808 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> POST /login
+2020-05-15 16:46:20,808 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-type: application/json
+2020-05-15 16:46:20,809 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-15 16:46:20,810 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept: */*
+2020-05-15 16:46:20,810 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> cache-control: no-cache
+2020-05-15 16:46:20,812 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> postman-token: b732c982-c894-4ccd-b9d1-ef657ddf43b8
+2020-05-15 16:46:20,813 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-15 16:46:20,813 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-15 16:46:20,813 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> connection: keep-alive
+2020-05-15 16:46:20,813 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-length: 87
+2020-05-15 16:46:20,813 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|>
+2020-05-15 16:46:20,814 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-15 16:46:20,814 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Ip Adress '127.0.0.1' is valid
+2020-05-15 16:46:20,814 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Processing authentication for 'http://127.0.0.1:8881/login' ...
+2020-05-15 16:46:20,814 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] The request header is 'null'
+2020-05-15 16:46:20,815 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Looking for the header start with 'PGW'
+2020-05-15 16:46:20,815 WARN com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] couldn't find PGW string, will ignore the header
+2020-05-15 16:46:20,882 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-15 16:46:20,882 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-15 16:46:20,964 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-15 16:46:20,965 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-15 16:46:20,993 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> {
+2020-05-15 16:46:20,994 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"username": "pgw_fptplay",
+2020-05-15 16:46:20,994 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"password": "F311P@ay2o201446!@#",
+2020-05-15 16:46:20,994 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service": "login"
+2020-05-15 16:46:20,994 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> }
+2020-05-15 16:46:20,994 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< 200 OK
+2020-05-15 16:46:20,994 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|<
+2020-05-15 16:46:20,995 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< {"error_code":0,"session":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQ","message":"Login successfully , username=pgw_fptplay"}
+2020-05-15 16:46:40,952 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> POST /payment/apigw
+2020-05-15 16:46:40,953 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww
+2020-05-15 16:46:40,953 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> content-type: application/json
+2020-05-15 16:46:40,953 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-15 16:46:40,954 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> accept: */*
+2020-05-15 16:46:40,955 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> cache-control: no-cache
+2020-05-15 16:46:40,955 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> postman-token: 13da3577-9a03-4468-a8e7-c6c160523fd5
+2020-05-15 16:46:40,955 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-15 16:46:40,955 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-15 16:46:40,956 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> connection: keep-alive
+2020-05-15 16:46:40,956 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> content-length: 231
+2020-05-15 16:46:40,956 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|>
+2020-05-15 16:46:40,956 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-15 16:46:40,956 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] Ip Adress '127.0.0.1' is valid
+2020-05-15 16:46:40,956 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-15 16:46:40,956 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww'
+2020-05-15 16:46:40,957 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] Looking for the header start with 'PGW'
+2020-05-15 16:46:40,957 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|< 200 OK
+2020-05-15 16:46:40,957 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|<
+2020-05-15 16:46:46,241 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> POST /payment/apigw
+2020-05-15 16:46:46,242 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww
+2020-05-15 16:46:46,242 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> content-type: application/json
+2020-05-15 16:46:46,242 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-15 16:46:46,242 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> accept: */*
+2020-05-15 16:46:46,242 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> cache-control: no-cache
+2020-05-15 16:46:46,243 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> postman-token: 621a0fcc-98bc-41e2-921f-05f650bf7d70
+2020-05-15 16:46:46,243 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-15 16:46:46,243 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-15 16:46:46,243 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> connection: keep-alive
+2020-05-15 16:46:46,243 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|> content-length: 231
+2020-05-15 16:46:46,243 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|>
+2020-05-15 16:46:46,244 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-15 16:46:46,244 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] Ip Adress '127.0.0.1' is valid
+2020-05-15 16:46:46,244 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-4] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-15 16:46:46,244 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-4] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww'
+2020-05-15 16:46:46,244 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-4] Looking for the header start with 'PGW'
+2020-05-15 16:46:46,245 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|< 200 OK
+2020-05-15 16:46:46,245 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-4] 127.0.0.1|<
+2020-05-15 16:46:49,428 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|> POST /payment/apigw
+2020-05-15 16:46:49,429 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww
+2020-05-15 16:46:49,430 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|> content-type: application/json
+2020-05-15 16:46:49,430 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-15 16:46:49,430 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|> accept: */*
+2020-05-15 16:46:49,430 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|> cache-control: no-cache
+2020-05-15 16:46:49,431 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|> postman-token: 4008c64b-8fc4-497d-84c5-a568fffc5b42
+2020-05-15 16:46:49,431 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-15 16:46:49,431 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-15 16:46:49,432 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|> connection: keep-alive
+2020-05-15 16:46:49,432 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|> content-length: 231
+2020-05-15 16:46:49,433 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|>
+2020-05-15 16:46:49,433 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-15 16:46:49,433 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] Ip Adress '127.0.0.1' is valid
+2020-05-15 16:46:49,433 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-5] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-15 16:46:49,433 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-5] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww'
+2020-05-15 16:46:49,434 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-5] Looking for the header start with 'PGW'
+2020-05-15 16:46:49,436 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|< 200 OK
+2020-05-15 16:46:49,437 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-5] 127.0.0.1|<
+2020-05-15 16:46:50,349 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|> POST /payment/apigw
+2020-05-15 16:46:50,350 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww
+2020-05-15 16:46:50,351 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|> content-type: application/json
+2020-05-15 16:46:50,352 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-15 16:46:50,353 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|> accept: */*
+2020-05-15 16:46:50,353 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|> cache-control: no-cache
+2020-05-15 16:46:50,353 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|> postman-token: 5a2b44bc-731f-4875-9dbc-eac49ce25a37
+2020-05-15 16:46:50,353 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-15 16:46:50,354 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-15 16:46:50,354 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|> connection: keep-alive
+2020-05-15 16:46:50,354 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|> content-length: 231
+2020-05-15 16:46:50,355 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|>
+2020-05-15 16:46:50,355 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-15 16:46:50,355 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] Ip Adress '127.0.0.1' is valid
+2020-05-15 16:46:50,356 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-6] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-15 16:46:50,357 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-6] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww'
+2020-05-15 16:46:50,357 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-6] Looking for the header start with 'PGW'
+2020-05-15 16:46:50,358 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|< 200 OK
+2020-05-15 16:46:50,358 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-6] 127.0.0.1|<
+2020-05-15 16:47:08,218 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|> POST /payment/apigw
+2020-05-15 16:47:08,218 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww
+2020-05-15 16:47:08,218 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|> content-type: application/json
+2020-05-15 16:47:08,219 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-15 16:47:08,219 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|> accept: */*
+2020-05-15 16:47:08,219 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|> cache-control: no-cache
+2020-05-15 16:47:08,219 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|> postman-token: 1f13df8b-e7af-457a-b5d3-42c113f2acf2
+2020-05-15 16:47:08,220 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-15 16:47:08,220 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-15 16:47:08,220 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|> connection: keep-alive
+2020-05-15 16:47:08,220 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|> content-length: 231
+2020-05-15 16:47:08,221 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|>
+2020-05-15 16:47:08,221 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-15 16:47:08,221 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] Ip Adress '127.0.0.1' is valid
+2020-05-15 16:47:08,222 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-7] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-15 16:47:08,223 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-7] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww'
+2020-05-15 16:47:08,223 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-7] Looking for the header start with 'PGW'
+2020-05-15 16:47:08,224 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|< 200 OK
+2020-05-15 16:47:08,224 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-7] 127.0.0.1|<
+2020-05-15 16:48:38,599 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|> POST /payment/apigw
+2020-05-15 16:48:38,599 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww
+2020-05-15 16:48:38,600 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|> content-type: application/json
+2020-05-15 16:48:38,600 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-15 16:48:38,600 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|> accept: */*
+2020-05-15 16:48:38,600 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|> cache-control: no-cache
+2020-05-15 16:48:38,600 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|> postman-token: 7063a377-0da3-4377-90f3-f9d98ee2bcbb
+2020-05-15 16:48:38,601 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-15 16:48:38,601 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-15 16:48:38,601 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|> connection: keep-alive
+2020-05-15 16:48:38,601 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|> content-length: 231
+2020-05-15 16:48:38,601 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|>
+2020-05-15 16:48:38,601 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-15 16:48:38,602 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] Ip Adress '127.0.0.1' is valid
+2020-05-15 16:48:38,602 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-9] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-15 16:48:38,602 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-9] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDM5OTk4MCwiaWF0IjoxNTg5NTM1OTgwfQ.f_C71uG3vLxqRIXHdn711TjL7Jbm6jJ9-hEqY_tlXa0HYpl87PE2V7Uic1uP9TEgU5iKPMVadIlmkpEP7VFUmQeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU4OTQ0Mjk5OCwiaWF0IjoxNTg4NTc4OTk4fQ.q3Hd9znZtRLW0_I2mB5e5YrAhBp7FVaFdAD3dVmM2Lytc16iMuMoczipgiYKkYjtFkB8sC9IG8S_JUmBk6uAww'
+2020-05-15 16:48:38,602 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-9] Looking for the header start with 'PGW'
+2020-05-15 16:48:38,602 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|< 200 OK
+2020-05-15 16:48:38,603 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-9] 127.0.0.1|<
+2020-05-15 16:48:58,704 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> POST /login
+2020-05-15 16:48:58,705 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> content-type: application/json
+2020-05-15 16:48:58,706 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-15 16:48:58,706 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> accept: */*
+2020-05-15 16:48:58,707 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> cache-control: no-cache
+2020-05-15 16:48:58,708 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> postman-token: 2a14b134-8547-4c1c-9ed1-290e01b47e89
+2020-05-15 16:48:58,708 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-15 16:48:58,709 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-15 16:48:58,709 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> connection: keep-alive
+2020-05-15 16:48:58,710 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> content-length: 87
+2020-05-15 16:48:58,710 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|>
+2020-05-15 16:48:58,710 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-15 16:48:58,711 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] Ip Adress '127.0.0.1' is valid
+2020-05-15 16:48:58,711 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-10] Processing authentication for 'http://127.0.0.1:8881/login' ...
+2020-05-15 16:48:58,712 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-10] The request header is 'null'
+2020-05-15 16:48:58,713 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-10] Looking for the header start with 'PGW'
+2020-05-15 16:48:58,713 WARN com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-10] couldn't find PGW string, will ignore the header
+2020-05-15 16:48:58,719 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-10] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-15 16:48:58,720 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-10] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-15 16:48:58,856 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-10] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-15 16:48:58,857 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-10] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-15 16:48:58,862 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> {
+2020-05-15 16:48:58,863 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> 	"username": "pgw_fptplay",
+2020-05-15 16:48:58,863 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> 	"password": "F311P@ay2o201446!@#",
+2020-05-15 16:48:58,863 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> 	"service": "login"
+2020-05-15 16:48:58,863 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|> }
+2020-05-15 16:48:58,863 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|< 200 OK
+2020-05-15 16:48:58,863 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|<
+2020-05-15 16:48:58,863 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-10] 127.0.0.1|< {"error_code":0,"session":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ","message":"Login successfully , username=pgw_fptplay"}
+2020-05-15 16:50:00,055 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> POST /payment/apigw
+2020-05-15 16:50:00,055 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-15 16:50:00,056 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-type: application/json
+2020-05-15 16:50:00,056 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-15 16:50:00,056 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept: */*
+2020-05-15 16:50:00,057 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> cache-control: no-cache
+2020-05-15 16:50:00,057 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> postman-token: 339c2514-209f-4b85-8bcb-0d15b6d0d63e
+2020-05-15 16:50:00,058 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-15 16:50:00,058 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-15 16:50:00,059 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> connection: keep-alive
+2020-05-15 16:50:00,059 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-length: 231
+2020-05-15 16:50:00,059 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|>
+2020-05-15 16:50:00,061 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-15 16:50:00,061 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Ip Adress '127.0.0.1' is valid
+2020-05-15 16:50:00,062 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-15 16:50:00,062 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-15 16:50:00,062 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Looking for the header start with 'PGW'
+2020-05-15 16:50:00,076 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] checking authentication for user 'pgw_fptplay'
+2020-05-15 16:50:00,076 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] security context was null, so authorizating user
+2020-05-15 16:50:00,076 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-15 16:50:00,076 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-15 16:50:00,082 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] authorizated user 'pgw_fptplay', setting security context
+2020-05-15 16:50:00,084 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-2] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "1234",
+	"service": "charge"
+}'
+2020-05-15 16:50:00,091 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-2] Service from the request is 'charge'
+2020-05-15 16:50:00,098 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-2] [doTelcoCharge] doing telco charging...
+2020-05-15 16:50:00,103 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyParameter] Starting to check request: null
+2020-05-15 16:50:00,104 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyParameter] Result: true
+2020-05-15 16:50:00,104 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyRequestCredentials] Starting to check request: null
+2020-05-15 16:50:00,105 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyRequestCredentials] Result: true
+2020-05-15 16:50:00,106 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-2] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='APIGWLogDocument {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='null'}'}
+2020-05-15 16:50:00,107 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-2] msgKeyword = null
+2020-05-15 16:50:00,108 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-2] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-15 16:50:00,120 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-2] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='APIGWLogDocument {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='null'}'}
+2020-05-15 16:50:00,230 ERROR com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [processRequest] Exception: Query { "$java" : Query: { "transId" : null }, Fields: { }, Sort: { } } returned non unique result.
+2020-05-15 16:50:00,232 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> {
+2020-05-15 16:50:00,233 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-15 16:50:00,234 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"cp_code": "001",
+2020-05-15 16:50:00,234 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-15 16:50:00,235 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-15 16:50:00,235 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-15 16:50:00,236 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-15 16:50:00,236 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"account": "dz",
+2020-05-15 16:50:00,237 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"cmd": "register",
+2020-05-15 16:50:00,237 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"trans_id": "1234",
+2020-05-15 16:50:00,237 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service": "charge"
+2020-05-15 16:50:00,237 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> }
+2020-05-15 16:50:00,237 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< 200 OK
+2020-05-15 16:50:00,237 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|<
+2020-05-15 16:50:00,237 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< {"error_code":-1,"trans_id":null}

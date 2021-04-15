@@ -1,0 +1,86 @@
+package com.dzung.torre.opportunity.object;
+
+import java.util.List;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ResultOpportinity {
+	private String id;
+	private String objective;
+	private String slug;
+	private String type;
+	private List<Organization> organizations;
+	private List<String> locations;
+	private boolean remote;
+	private boolean external;
+	private String deadline;	
+	private String created;
+	private String status;	
+	private Compensation compensation;
+	private List<Skill> skills;
+	
+	private String locationName;
+	private String name;
+	private List<String> openTo;
+	private String picture;
+	private String professionalHeadline;
+	private boolean remoter;
+	private String subjectId;
+	private String username;
+	private boolean verified;
+	private long weight;
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class Organization {
+		private int id;
+		private String name;
+		private String picture;
+	}
+		
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private class Compensation {
+		private DataInfo data;
+		private boolean visible;
+		
+		@Data
+		@AllArgsConstructor
+		@NoArgsConstructor
+		private class DataInfo {
+			private String code;
+			private String currency;
+			private String minAmount;
+			private String maxAmount;
+			private String periodicity;
+		}
+	}
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class Skill {
+		private String name;
+		private String experience;
+		@Override
+		public String toString() {
+			return "Skill [name=" + name + ", experience=" + experience + "]";
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "ResultPeople [_meta=" + _meta + ", compensations=" + compensations + ", locationName=" + locationName
+				+ ", name=" + name + ", openTo=" + openTo + ", picture=" + picture + ", professionalHeadline="
+				+ professionalHeadline + ", remoter=" + remoter + ", skills=" + skills + ", subjectId=" + subjectId
+				+ ", username=" + username + ", verified=" + verified + ", weight=" + weight + "]";
+	}
+	
+	
+}

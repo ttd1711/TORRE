@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- VINAPHONE RENEW CHARGING -->
+    <dest name="PAYMENTGW.TELCO.RENEW.REQUEST.METFONE"        type="TELCOCHARGE_REQUEST">
+        <rte> 
+        	<telco>metfone</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword>RENEW</keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>
+    <!-- VINAPHONE CHARGING -->
+    <dest name="PAYMENTGW.TELCO.CHARGING.REQUEST.METFONE"        type="TELCOCHARGE_REQUEST">
+        <rte> 
+        	<telco>metfone</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword>DOWNLOAD,REGISTER,CANCEL</keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>
+    <!-- VINAPHONE CHARGING -->
+    <dest name="PAYMENTGW.TELCO.OTPCONFIRM.REQUEST.METFONE"        type="OTPCONFIRM_REQUEST">
+        <rte> 
+        	<telco>metfone</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword></keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>
+
+    <dest name="PAYMENTGW.APIGW.CBCOM.ACCOUNT_CHECKING"        type="INIT">
+        <rte> 
+        	<telco>metfone</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword></keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>    
+    <dest name="PAYMENTGW.APIGW.CBCOM.PAYMENT_NOTIFICATION"        type="INIT">
+        <rte> 
+        	<telco>metfone</telco>
+       		<msisdn></msisdn>
+			<short-code></short-code> 
+        	<keyword></keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>    
+    <dest name="PAYMENTGW.TELCO.MT.REQUEST.METFONE"        type="MT_REQUEST">
+        <rte> 
+        	<telco></telco>
+       		<msisdn></msisdn>
+			<short-code>9999</short-code> 
+        	<keyword></keyword> 
+        	<split-rule></split-rule> 
+       	 </rte>
+    </dest>   
+</root>

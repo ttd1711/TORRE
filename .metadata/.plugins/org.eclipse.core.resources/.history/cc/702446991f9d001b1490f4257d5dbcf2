@@ -1,0 +1,19 @@
+package com.dzung.torre.genome.properties;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@ConfigurationProperties(prefix = "torre")
+public class Torre {
+	@JsonProperty("genome")
+	private Genome genome;
+	
+	public class Genome {
+		@JsonProperty("api-url")
+	    private String apiUrl;
+		
+		@JsonProperty("api-type")
+	    private String apiType;
+	}
+}

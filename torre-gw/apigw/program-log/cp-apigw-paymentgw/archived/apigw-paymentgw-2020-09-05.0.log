@@ -1,0 +1,2 @@
+2020-09-05 00:30:32,214 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] Routing file updated
+2020-09-05 00:30:32,230 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] New routes created.

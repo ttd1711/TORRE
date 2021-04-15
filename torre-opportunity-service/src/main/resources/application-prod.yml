@@ -1,0 +1,19 @@
+server:
+  port: 8002
+  
+spring:
+  application:
+    name: OPPORTUNITY-SERVICE
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    hostname: 127.0.0.1
+
+torre:
+  opportunity-api-url: https://torre.co/api/opportunities/
+  opportunity-search-api-url: https://search.torre.co/opportunities/_search/

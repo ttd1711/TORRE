@@ -1,0 +1,5 @@
+package com.dzung.torre.genome.object;
+
+public class PeopleRequest {
+
+}

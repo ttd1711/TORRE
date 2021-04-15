@@ -1,0 +1,790 @@
+2020-05-17 01:30:41,403 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] Routing file updated
+2020-05-17 01:30:41,451 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] New routes created.
+2020-05-17 01:31:15,761 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> POST /payment/apigw
+2020-05-17 01:31:15,766 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-17 01:31:15,767 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-type: application/json
+2020-05-17 01:31:15,768 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-17 01:31:15,768 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept: */*
+2020-05-17 01:31:15,769 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-05-17 01:31:15,770 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> postman-token: 5c6837b1-190a-4808-b38b-2f1e2ac5141b
+2020-05-17 01:31:15,771 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-17 01:31:15,772 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-17 01:31:15,772 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> connection: keep-alive
+2020-05-17 01:31:15,772 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-length: 228
+2020-05-17 01:31:15,773 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>
+2020-05-17 01:31:15,774 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-17 01:31:15,774 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Ip Adress '127.0.0.1' is valid
+2020-05-17 01:31:15,775 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-17 01:31:15,775 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-17 01:31:15,776 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Looking for the header start with 'PGW'
+2020-05-17 01:31:16,003 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] checking authentication for user 'pgw_fptplay'
+2020-05-17 01:31:16,004 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] security context was null, so authorizating user
+2020-05-17 01:31:16,005 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-17 01:31:16,006 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-17 01:31:16,029 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] authorizated user 'pgw_fptplay', setting security context
+2020-05-17 01:31:16,120 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-1] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "1",
+	"service": "charge"
+}'
+2020-05-17 01:31:16,149 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] Service from the request is 'charge'
+2020-05-17 01:31:16,213 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] [doTelcoCharge] doing telco charging...
+2020-05-17 01:31:16,227 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Starting to check request: 1
+2020-05-17 01:31:16,228 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Result: true
+2020-05-17 01:31:16,228 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Starting to check request: 1
+2020-05-17 01:31:16,228 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Result: true
+2020-05-17 01:31:16,540 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [insertRequest][to DB] Result ID: 5ec03174226bfb6cd6528106
+2020-05-17 01:31:16,544 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='1',price='0',evenTime='null',errorCode='0', dbId='5ec03174226bfb6cd6528106'}'}
+2020-05-17 01:31:16,545 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] msgKeyword = null
+2020-05-17 01:31:16,603 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-17 01:31:16,673 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='1',price='0',evenTime='null',errorCode='0', dbId='5ec03174226bfb6cd6528106'}'}
+2020-05-17 01:31:16,674 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec03174226bfb6cd6528106] from db
+2020-05-17 01:31:17,682 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec03174226bfb6cd6528106] from db
+2020-05-17 01:31:18,690 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec03174226bfb6cd6528106] from db
+2020-05-17 01:31:19,699 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec03174226bfb6cd6528106] from db
+2020-05-17 01:31:19,701 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-05-17 01:31:19,738 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> {
+2020-05-17 01:31:19,739 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-17 01:31:19,739 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cp_code": "001",
+2020-05-17 01:31:19,739 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-17 01:31:19,740 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-17 01:31:19,740 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-17 01:31:19,743 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-17 01:31:19,743 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"account": "dz",
+2020-05-17 01:31:19,743 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cmd": "register",
+2020-05-17 01:31:19,743 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"trans_id": "1",
+2020-05-17 01:31:19,743 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service": "charge"
+2020-05-17 01:31:19,744 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> }
+2020-05-17 01:31:19,744 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< 200 OK
+2020-05-17 01:31:19,744 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|<
+2020-05-17 01:31:19,745 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< {"error_code":-1,"trans_id":"1"}
+2020-05-17 01:31:38,149 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> POST /payment/apigw
+2020-05-17 01:31:38,150 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-17 01:31:38,150 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-type: application/json
+2020-05-17 01:31:38,151 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-17 01:31:38,152 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept: */*
+2020-05-17 01:31:38,152 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> cache-control: no-cache
+2020-05-17 01:31:38,152 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> postman-token: 30731a2b-cdef-4c96-b1b0-f63ae6c5ced1
+2020-05-17 01:31:38,153 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-17 01:31:38,153 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-17 01:31:38,153 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> connection: keep-alive
+2020-05-17 01:31:38,154 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-length: 228
+2020-05-17 01:31:38,154 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|>
+2020-05-17 01:31:38,155 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-17 01:31:38,155 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Ip Adress '127.0.0.1' is valid
+2020-05-17 01:31:38,155 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-17 01:31:38,155 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-17 01:31:38,156 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Looking for the header start with 'PGW'
+2020-05-17 01:31:38,158 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] checking authentication for user 'pgw_fptplay'
+2020-05-17 01:31:38,159 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] security context was null, so authorizating user
+2020-05-17 01:31:38,159 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-17 01:31:38,159 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-17 01:31:38,168 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] authorizated user 'pgw_fptplay', setting security context
+2020-05-17 01:31:38,183 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-2] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "2",
+	"service": "charge"
+}'
+2020-05-17 01:31:38,184 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-2] Service from the request is 'charge'
+2020-05-17 01:31:38,185 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-2] [doTelcoCharge] doing telco charging...
+2020-05-17 01:31:38,186 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyParameter] Starting to check request: 2
+2020-05-17 01:31:38,186 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyParameter] Result: true
+2020-05-17 01:31:38,186 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyRequestCredentials] Starting to check request: 2
+2020-05-17 01:31:38,187 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyRequestCredentials] Result: true
+2020-05-17 01:31:38,270 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [insertRequest][to DB] Result ID: 5ec0318a226bfb6cd6528107
+2020-05-17 01:31:38,271 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-2] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='2',price='0',evenTime='null',errorCode='0', dbId='5ec0318a226bfb6cd6528107'}'}
+2020-05-17 01:31:38,272 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-2] msgKeyword = null
+2020-05-17 01:31:38,272 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-2] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-17 01:31:38,274 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-2] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='2',price='0',evenTime='null',errorCode='0', dbId='5ec0318a226bfb6cd6528107'}'}
+2020-05-17 01:31:38,283 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec0318a226bfb6cd6528107] from db
+2020-05-17 01:31:38,439 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='TELCO_CHARGE_RESPONSE', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='2',price='0',evenTime='null',errorCode='0', dbId='5ec0318a226bfb6cd6528107'}'}
+2020-05-17 01:31:39,307 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec0318a226bfb6cd6528107] from db
+2020-05-17 01:31:40,314 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec0318a226bfb6cd6528107] from db
+2020-05-17 01:31:41,319 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec0318a226bfb6cd6528107] from db
+2020-05-17 01:31:41,323 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-05-17 01:31:41,325 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> {
+2020-05-17 01:31:41,325 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-17 01:31:41,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"cp_code": "001",
+2020-05-17 01:31:41,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-17 01:31:41,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-17 01:31:41,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-17 01:31:41,328 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-17 01:31:41,329 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"account": "dz",
+2020-05-17 01:31:41,329 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"cmd": "register",
+2020-05-17 01:31:41,329 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"trans_id": "2",
+2020-05-17 01:31:41,330 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service": "charge"
+2020-05-17 01:31:41,330 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> }
+2020-05-17 01:31:41,330 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< 200 OK
+2020-05-17 01:31:41,331 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|<
+2020-05-17 01:31:41,331 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< {"error_code":-1,"trans_id":"2"}
+2020-05-17 01:32:23,767 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-6-thread-1] Routing file updated
+2020-05-17 01:32:23,783 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-6-thread-1] New routes created.
+2020-05-17 01:32:43,838 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> POST /payment/apigw
+2020-05-17 01:32:43,840 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-17 01:32:43,840 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-type: application/json
+2020-05-17 01:32:43,840 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-17 01:32:43,841 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept: */*
+2020-05-17 01:32:43,841 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-05-17 01:32:43,841 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> postman-token: d060efe2-5983-4a21-953f-8ca617c823c7
+2020-05-17 01:32:43,841 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-17 01:32:43,841 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-17 01:32:43,842 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> connection: keep-alive
+2020-05-17 01:32:43,842 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-length: 228
+2020-05-17 01:32:43,842 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>
+2020-05-17 01:32:43,843 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-17 01:32:43,843 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Ip Adress '127.0.0.1' is valid
+2020-05-17 01:32:43,844 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-17 01:32:43,844 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-17 01:32:43,844 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Looking for the header start with 'PGW'
+2020-05-17 01:32:43,848 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] checking authentication for user 'pgw_fptplay'
+2020-05-17 01:32:43,849 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] security context was null, so authorizating user
+2020-05-17 01:32:43,849 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-17 01:32:43,849 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-17 01:32:43,857 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] authorizated user 'pgw_fptplay', setting security context
+2020-05-17 01:32:43,860 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-1] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "3",
+	"service": "charge"
+}'
+2020-05-17 01:32:43,867 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] Service from the request is 'charge'
+2020-05-17 01:32:43,870 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] [doTelcoCharge] doing telco charging...
+2020-05-17 01:32:43,874 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Starting to check request: 3
+2020-05-17 01:32:43,875 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Result: true
+2020-05-17 01:32:43,875 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Starting to check request: 3
+2020-05-17 01:32:43,875 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Result: true
+2020-05-17 01:32:43,925 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [insertRequest][to DB] Result ID: 5ec031cb226bfb6cd6528109
+2020-05-17 01:32:43,926 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='3',price='0',evenTime='null',errorCode='0', dbId='5ec031cb226bfb6cd6528109'}'}
+2020-05-17 01:32:43,926 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] msgKeyword = null
+2020-05-17 01:32:43,927 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-17 01:32:43,932 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='3',price='0',evenTime='null',errorCode='0', dbId='5ec031cb226bfb6cd6528109'}'}
+2020-05-17 01:32:43,933 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec031cb226bfb6cd6528109] from db
+2020-05-17 01:32:44,937 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec031cb226bfb6cd6528109] from db
+2020-05-17 01:32:45,940 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec031cb226bfb6cd6528109] from db
+2020-05-17 01:32:46,949 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec031cb226bfb6cd6528109] from db
+2020-05-17 01:32:46,953 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-05-17 01:32:46,958 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> {
+2020-05-17 01:32:46,958 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-17 01:32:46,958 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cp_code": "001",
+2020-05-17 01:32:46,959 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-17 01:32:46,959 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-17 01:32:46,959 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-17 01:32:46,959 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-17 01:32:46,959 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"account": "dz",
+2020-05-17 01:32:46,959 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cmd": "register",
+2020-05-17 01:32:46,960 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"trans_id": "3",
+2020-05-17 01:32:46,960 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service": "charge"
+2020-05-17 01:32:46,960 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> }
+2020-05-17 01:32:46,960 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< 200 OK
+2020-05-17 01:32:46,960 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|<
+2020-05-17 01:32:46,961 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< {"error_code":-1,"trans_id":"3"}
+2020-05-17 01:35:24,624 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1] Routing file updated
+2020-05-17 01:35:24,634 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1] New routes created.
+2020-05-17 01:36:10,844 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-12-thread-1] Routing file updated
+2020-05-17 01:36:10,850 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-12-thread-1] New routes created.
+2020-05-17 01:36:18,912 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> POST /payment/apigw
+2020-05-17 01:36:18,913 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-17 01:36:18,913 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-type: application/json
+2020-05-17 01:36:18,914 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-17 01:36:18,914 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept: */*
+2020-05-17 01:36:18,914 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-05-17 01:36:18,914 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> postman-token: 0cf01b8c-827e-48ba-a4a5-7392518d6718
+2020-05-17 01:36:18,914 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-17 01:36:18,914 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-17 01:36:18,915 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> connection: keep-alive
+2020-05-17 01:36:18,915 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-length: 228
+2020-05-17 01:36:18,915 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>
+2020-05-17 01:36:18,915 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-17 01:36:18,915 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Ip Adress '127.0.0.1' is valid
+2020-05-17 01:36:18,916 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-17 01:36:18,916 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-17 01:36:18,916 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Looking for the header start with 'PGW'
+2020-05-17 01:36:18,919 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] checking authentication for user 'pgw_fptplay'
+2020-05-17 01:36:18,919 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] security context was null, so authorizating user
+2020-05-17 01:36:18,919 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-17 01:36:18,920 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-17 01:36:18,928 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] authorizated user 'pgw_fptplay', setting security context
+2020-05-17 01:36:18,930 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-1] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "4",
+	"service": "charge"
+}'
+2020-05-17 01:36:18,937 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] Service from the request is 'charge'
+2020-05-17 01:36:18,939 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] [doTelcoCharge] doing telco charging...
+2020-05-17 01:36:18,945 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Starting to check request: 4
+2020-05-17 01:36:18,946 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Result: true
+2020-05-17 01:36:18,946 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Starting to check request: 4
+2020-05-17 01:36:18,946 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Result: true
+2020-05-17 01:36:19,000 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [insertRequest][to DB] Result ID: 5ec032a2226bfb6cd652810c
+2020-05-17 01:36:19,001 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='4',price='0',evenTime='null',errorCode='0', dbId='5ec032a2226bfb6cd652810c'}'}
+2020-05-17 01:36:19,002 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] msgKeyword = null
+2020-05-17 01:36:19,003 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-17 01:36:19,009 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='4',price='0',evenTime='null',errorCode='0', dbId='5ec032a2226bfb6cd652810c'}'}
+2020-05-17 01:36:19,010 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec032a2226bfb6cd652810c] from db
+2020-05-17 01:36:20,025 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec032a2226bfb6cd652810c] from db
+2020-05-17 01:36:21,035 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec032a2226bfb6cd652810c] from db
+2020-05-17 01:36:22,043 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec032a2226bfb6cd652810c] from db
+2020-05-17 01:36:22,047 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-05-17 01:36:22,050 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> {
+2020-05-17 01:36:22,051 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-17 01:36:22,051 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cp_code": "001",
+2020-05-17 01:36:22,051 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-17 01:36:22,051 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-17 01:36:22,051 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-17 01:36:22,051 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-17 01:36:22,051 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"account": "dz",
+2020-05-17 01:36:22,051 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cmd": "register",
+2020-05-17 01:36:22,051 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"trans_id": "4",
+2020-05-17 01:36:22,052 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service": "charge"
+2020-05-17 01:36:22,052 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> }
+2020-05-17 01:36:22,052 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< 200 OK
+2020-05-17 01:36:22,052 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|<
+2020-05-17 01:36:22,052 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< {"error_code":-1,"trans_id":"4"}
+2020-05-17 01:36:38,225 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> POST /payment/apigw
+2020-05-17 01:36:38,229 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-17 01:36:38,229 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-type: application/json
+2020-05-17 01:36:38,230 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-17 01:36:38,230 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept: */*
+2020-05-17 01:36:38,230 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> cache-control: no-cache
+2020-05-17 01:36:38,230 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> postman-token: 10e0a994-5725-49b9-a980-cf907c0c1a16
+2020-05-17 01:36:38,231 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-17 01:36:38,231 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-17 01:36:38,231 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> connection: keep-alive
+2020-05-17 01:36:38,231 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-length: 228
+2020-05-17 01:36:38,232 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|>
+2020-05-17 01:36:38,232 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-17 01:36:38,232 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Ip Adress '127.0.0.1' is valid
+2020-05-17 01:36:38,232 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-17 01:36:38,232 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-17 01:36:38,232 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Looking for the header start with 'PGW'
+2020-05-17 01:36:38,234 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] checking authentication for user 'pgw_fptplay'
+2020-05-17 01:36:38,234 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] security context was null, so authorizating user
+2020-05-17 01:36:38,234 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-17 01:36:38,234 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-17 01:36:38,237 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] authorizated user 'pgw_fptplay', setting security context
+2020-05-17 01:36:38,239 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-2] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "5",
+	"service": "charge"
+}'
+2020-05-17 01:36:38,240 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-2] Service from the request is 'charge'
+2020-05-17 01:36:38,241 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-2] [doTelcoCharge] doing telco charging...
+2020-05-17 01:36:38,242 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyParameter] Starting to check request: 5
+2020-05-17 01:36:38,242 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyParameter] Result: true
+2020-05-17 01:36:38,243 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyRequestCredentials] Starting to check request: 5
+2020-05-17 01:36:38,243 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyRequestCredentials] Result: true
+2020-05-17 01:36:38,249 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [insertRequest][to DB] Result ID: 5ec032b6226bfb6cd652810d
+2020-05-17 01:36:38,250 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-2] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='5',price='0',evenTime='null',errorCode='0', dbId='5ec032b6226bfb6cd652810d'}'}
+2020-05-17 01:36:38,250 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-2] msgKeyword = null
+2020-05-17 01:36:38,250 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-2] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-17 01:36:38,251 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-2] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='5',price='0',evenTime='null',errorCode='0', dbId='5ec032b6226bfb6cd652810d'}'}
+2020-05-17 01:36:38,251 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec032b6226bfb6cd652810d] from db
+2020-05-17 01:36:38,258 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='TELCO_CHARGE_RESPONSE', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='5',price='0',evenTime='null',errorCode='0', dbId='5ec032b6226bfb6cd652810d'}'}
+2020-05-17 01:36:39,257 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec032b6226bfb6cd652810d] from db
+2020-05-17 01:36:40,266 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec032b6226bfb6cd652810d] from db
+2020-05-17 01:36:41,274 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec032b6226bfb6cd652810d] from db
+2020-05-17 01:36:41,282 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-05-17 01:36:41,284 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> {
+2020-05-17 01:36:41,285 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-17 01:36:41,285 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"cp_code": "001",
+2020-05-17 01:36:41,285 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-17 01:36:41,286 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-17 01:36:41,286 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-17 01:36:41,286 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-17 01:36:41,286 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"account": "dz",
+2020-05-17 01:36:41,287 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"cmd": "register",
+2020-05-17 01:36:41,287 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"trans_id": "5",
+2020-05-17 01:36:41,287 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service": "charge"
+2020-05-17 01:36:41,287 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> }
+2020-05-17 01:36:41,287 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< 200 OK
+2020-05-17 01:36:41,287 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|<
+2020-05-17 01:36:41,287 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< {"error_code":-1,"trans_id":"5"}
+2020-05-17 01:36:57,148 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> POST /payment/apigw
+2020-05-17 01:36:57,149 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-17 01:36:57,149 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> content-type: application/json
+2020-05-17 01:36:57,150 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-17 01:36:57,150 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> accept: */*
+2020-05-17 01:36:57,150 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> cache-control: no-cache
+2020-05-17 01:36:57,150 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> postman-token: 3c63a0d6-1e91-422e-9820-b7a7c6384293
+2020-05-17 01:36:57,150 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-17 01:36:57,150 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-17 01:36:57,151 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> connection: keep-alive
+2020-05-17 01:36:57,151 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> content-length: 228
+2020-05-17 01:36:57,151 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|>
+2020-05-17 01:36:57,151 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-17 01:36:57,151 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] Ip Adress '127.0.0.1' is valid
+2020-05-17 01:36:57,151 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-17 01:36:57,151 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-17 01:36:57,151 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] Looking for the header start with 'PGW'
+2020-05-17 01:36:57,154 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] checking authentication for user 'pgw_fptplay'
+2020-05-17 01:36:57,154 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] security context was null, so authorizating user
+2020-05-17 01:36:57,154 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-3] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-17 01:36:57,154 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-3] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-17 01:36:57,159 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] authorizated user 'pgw_fptplay', setting security context
+2020-05-17 01:36:57,161 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-3] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "6",
+	"service": "charge"
+}'
+2020-05-17 01:36:57,163 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-3] Service from the request is 'charge'
+2020-05-17 01:36:57,163 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-3] [doTelcoCharge] doing telco charging...
+2020-05-17 01:36:57,163 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [verifyParameter] Starting to check request: 6
+2020-05-17 01:36:57,163 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [verifyParameter] Result: true
+2020-05-17 01:36:57,164 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [verifyRequestCredentials] Starting to check request: 6
+2020-05-17 01:36:57,164 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [verifyRequestCredentials] Result: true
+2020-05-17 01:36:57,166 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [insertRequest][to DB] Result ID: 5ec032c9226bfb6cd652810e
+2020-05-17 01:36:57,166 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-3] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='6',price='0',evenTime='null',errorCode='0', dbId='5ec032c9226bfb6cd652810e'}'}
+2020-05-17 01:36:57,167 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-3] msgKeyword = null
+2020-05-17 01:36:57,167 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-3] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-17 01:36:57,168 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-3] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='6',price='0',evenTime='null',errorCode='0', dbId='5ec032c9226bfb6cd652810e'}'}
+2020-05-17 01:36:57,168 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ec032c9226bfb6cd652810e] from db
+2020-05-17 01:36:58,173 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ec032c9226bfb6cd652810e] from db
+2020-05-17 01:36:59,184 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ec032c9226bfb6cd652810e] from db
+2020-05-17 01:37:00,190 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ec032c9226bfb6cd652810e] from db
+2020-05-17 01:37:00,194 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-05-17 01:37:00,197 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> {
+2020-05-17 01:37:00,197 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-17 01:37:00,197 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"cp_code": "001",
+2020-05-17 01:37:00,197 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-17 01:37:00,198 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-17 01:37:00,198 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-17 01:37:00,198 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-17 01:37:00,198 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"account": "dz",
+2020-05-17 01:37:00,198 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"cmd": "register",
+2020-05-17 01:37:00,198 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"trans_id": "6",
+2020-05-17 01:37:00,199 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"service": "charge"
+2020-05-17 01:37:00,199 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> }
+2020-05-17 01:37:00,199 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|< 200 OK
+2020-05-17 01:37:00,199 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|<
+2020-05-17 01:37:00,199 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|< {"error_code":-1,"trans_id":"6"}
+2020-05-17 01:37:30,186 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-15-thread-1] Routing file updated
+2020-05-17 01:37:30,209 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-15-thread-1] New routes created.
+2020-05-17 01:37:43,320 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> POST /payment/apigw
+2020-05-17 01:37:43,324 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-17 01:37:43,325 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-type: application/json
+2020-05-17 01:37:43,325 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-17 01:37:43,325 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept: */*
+2020-05-17 01:37:43,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-05-17 01:37:43,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> postman-token: 4c184460-735d-45cc-b3e2-e83b6ce74cea
+2020-05-17 01:37:43,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-17 01:37:43,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-17 01:37:43,327 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> connection: keep-alive
+2020-05-17 01:37:43,327 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-length: 228
+2020-05-17 01:37:43,327 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>
+2020-05-17 01:37:43,327 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-17 01:37:43,328 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Ip Adress '127.0.0.1' is valid
+2020-05-17 01:37:43,328 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-17 01:37:43,328 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-17 01:37:43,328 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Looking for the header start with 'PGW'
+2020-05-17 01:37:43,339 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] checking authentication for user 'pgw_fptplay'
+2020-05-17 01:37:43,340 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] security context was null, so authorizating user
+2020-05-17 01:37:43,340 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-17 01:37:43,340 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-17 01:37:43,347 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] authorizated user 'pgw_fptplay', setting security context
+2020-05-17 01:37:43,356 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-1] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "7",
+	"service": "charge"
+}'
+2020-05-17 01:37:43,372 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] Service from the request is 'charge'
+2020-05-17 01:37:43,375 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] [doTelcoCharge] doing telco charging...
+2020-05-17 01:37:43,387 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Starting to check request: 7
+2020-05-17 01:37:43,388 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Result: true
+2020-05-17 01:37:43,389 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Starting to check request: 7
+2020-05-17 01:37:43,389 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Result: true
+2020-05-17 01:37:43,479 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [insertRequest][to DB] Result ID: 5ec032f7226bfb6cd6528110
+2020-05-17 01:37:43,481 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='7',price='0',evenTime='null',errorCode='0', dbId='5ec032f7226bfb6cd6528110'}'}
+2020-05-17 01:37:43,482 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] msgKeyword = null
+2020-05-17 01:37:43,482 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-17 01:37:43,490 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='7',price='0',evenTime='null',errorCode='0', dbId='5ec032f7226bfb6cd6528110'}'}
+2020-05-17 01:37:43,491 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec032f7226bfb6cd6528110] from db
+2020-05-17 01:37:44,497 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec032f7226bfb6cd6528110] from db
+2020-05-17 01:37:45,506 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec032f7226bfb6cd6528110] from db
+2020-05-17 01:37:46,513 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec032f7226bfb6cd6528110] from db
+2020-05-17 01:37:46,517 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-05-17 01:37:46,526 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> {
+2020-05-17 01:37:46,526 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-17 01:37:46,527 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cp_code": "001",
+2020-05-17 01:37:46,527 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-17 01:37:46,527 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-17 01:37:46,527 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-17 01:37:46,527 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-17 01:37:46,527 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"account": "dz",
+2020-05-17 01:37:46,528 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cmd": "register",
+2020-05-17 01:37:46,528 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"trans_id": "7",
+2020-05-17 01:37:46,528 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service": "charge"
+2020-05-17 01:37:46,528 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> }
+2020-05-17 01:37:46,528 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< 200 OK
+2020-05-17 01:37:46,529 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|<
+2020-05-17 01:37:46,529 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< {"error_code":-1,"trans_id":"7"}
+2020-05-17 01:40:16,250 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-18-thread-1] Routing file updated
+2020-05-17 01:40:16,260 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-18-thread-1] New routes created.
+2020-05-17 01:40:23,102 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> POST /payment/apigw
+2020-05-17 01:40:23,105 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-17 01:40:23,106 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-type: application/json
+2020-05-17 01:40:23,106 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-17 01:40:23,106 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept: */*
+2020-05-17 01:40:23,107 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-05-17 01:40:23,107 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> postman-token: ea88c54e-c7d8-410f-8f59-5ce0ece2c244
+2020-05-17 01:40:23,108 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-17 01:40:23,108 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-17 01:40:23,108 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> connection: keep-alive
+2020-05-17 01:40:23,109 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-length: 228
+2020-05-17 01:40:23,109 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>
+2020-05-17 01:40:23,109 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-17 01:40:23,109 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Ip Adress '127.0.0.1' is valid
+2020-05-17 01:40:23,109 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-17 01:40:23,110 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-17 01:40:23,110 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Looking for the header start with 'PGW'
+2020-05-17 01:40:23,112 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] checking authentication for user 'pgw_fptplay'
+2020-05-17 01:40:23,112 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] security context was null, so authorizating user
+2020-05-17 01:40:23,112 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-17 01:40:23,112 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-17 01:40:23,116 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] authorizated user 'pgw_fptplay', setting security context
+2020-05-17 01:40:23,119 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-1] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "8",
+	"service": "charge"
+}'
+2020-05-17 01:40:23,130 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] Service from the request is 'charge'
+2020-05-17 01:40:23,132 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] [doTelcoCharge] doing telco charging...
+2020-05-17 01:40:23,139 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Starting to check request: 8
+2020-05-17 01:40:23,140 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Result: true
+2020-05-17 01:40:23,140 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Starting to check request: 8
+2020-05-17 01:40:23,140 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Result: true
+2020-05-17 01:40:23,186 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [insertRequest][to DB] Result ID: 5ec03397226bfb6cd6528112
+2020-05-17 01:40:23,187 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='8',price='0',evenTime='null',errorCode='0', dbId='5ec03397226bfb6cd6528112'}'}
+2020-05-17 01:40:23,189 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] msgKeyword = null
+2020-05-17 01:40:23,189 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-17 01:40:23,192 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='8',price='0',evenTime='null',errorCode='0', dbId='5ec03397226bfb6cd6528112'}'}
+2020-05-17 01:40:23,193 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec03397226bfb6cd6528112] from db
+2020-05-17 01:40:23,214 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='TELCO_CHARGE_RESPONSE', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='8',price='0',evenTime='null',errorCode='0', dbId='5ec03397226bfb6cd6528112'}'}
+2020-05-17 01:40:24,196 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec03397226bfb6cd6528112] from db
+2020-05-17 01:40:25,204 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec03397226bfb6cd6528112] from db
+2020-05-17 01:40:26,208 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec03397226bfb6cd6528112] from db
+2020-05-17 01:40:26,212 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-05-17 01:40:26,217 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> {
+2020-05-17 01:40:26,217 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-17 01:40:26,218 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cp_code": "001",
+2020-05-17 01:40:26,218 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-17 01:40:26,218 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-17 01:40:26,218 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-17 01:40:26,218 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-17 01:40:26,218 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"account": "dz",
+2020-05-17 01:40:26,218 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cmd": "register",
+2020-05-17 01:40:26,219 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"trans_id": "8",
+2020-05-17 01:40:26,219 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service": "charge"
+2020-05-17 01:40:26,219 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> }
+2020-05-17 01:40:26,219 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< 200 OK
+2020-05-17 01:40:26,220 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|<
+2020-05-17 01:40:26,220 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< {"error_code":-1,"trans_id":"8"}
+2020-05-17 01:40:33,273 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> POST /payment/apigw
+2020-05-17 01:40:33,273 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-17 01:40:33,274 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-type: application/json
+2020-05-17 01:40:33,274 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-17 01:40:33,274 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept: */*
+2020-05-17 01:40:33,274 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> cache-control: no-cache
+2020-05-17 01:40:33,275 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> postman-token: 44400a1c-80d9-4a38-a0aa-4a5b47cfee0c
+2020-05-17 01:40:33,275 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-17 01:40:33,275 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-17 01:40:33,275 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> connection: keep-alive
+2020-05-17 01:40:33,275 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> content-length: 228
+2020-05-17 01:40:33,275 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|>
+2020-05-17 01:40:33,276 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-17 01:40:33,276 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] Ip Adress '127.0.0.1' is valid
+2020-05-17 01:40:33,276 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-17 01:40:33,276 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-17 01:40:33,276 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] Looking for the header start with 'PGW'
+2020-05-17 01:40:33,278 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] checking authentication for user 'pgw_fptplay'
+2020-05-17 01:40:33,278 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] security context was null, so authorizating user
+2020-05-17 01:40:33,278 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-17 01:40:33,278 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-2] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-17 01:40:33,283 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-2] authorizated user 'pgw_fptplay', setting security context
+2020-05-17 01:40:33,286 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-2] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "9",
+	"service": "charge"
+}'
+2020-05-17 01:40:33,288 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-2] Service from the request is 'charge'
+2020-05-17 01:40:33,289 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-2] [doTelcoCharge] doing telco charging...
+2020-05-17 01:40:33,290 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyParameter] Starting to check request: 9
+2020-05-17 01:40:33,290 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyParameter] Result: true
+2020-05-17 01:40:33,291 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyRequestCredentials] Starting to check request: 9
+2020-05-17 01:40:33,292 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [verifyRequestCredentials] Result: true
+2020-05-17 01:40:33,296 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [insertRequest][to DB] Result ID: 5ec033a1226bfb6cd6528113
+2020-05-17 01:40:33,297 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-2] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='9',price='0',evenTime='null',errorCode='0', dbId='5ec033a1226bfb6cd6528113'}'}
+2020-05-17 01:40:33,297 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-2] msgKeyword = null
+2020-05-17 01:40:33,298 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-2] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-17 01:40:33,298 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-2] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='9',price='0',evenTime='null',errorCode='0', dbId='5ec033a1226bfb6cd6528113'}'}
+2020-05-17 01:40:33,299 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec033a1226bfb6cd6528113] from db
+2020-05-17 01:40:33,306 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='TELCO_CHARGE_RESPONSE', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='9',price='0',evenTime='null',errorCode='0', dbId='5ec033a1226bfb6cd6528113'}'}
+2020-05-17 01:40:34,308 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec033a1226bfb6cd6528113] from db
+2020-05-17 01:40:35,314 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec033a1226bfb6cd6528113] from db
+2020-05-17 01:40:36,318 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] starting to select result of the request [5ec033a1226bfb6cd6528113] from db
+2020-05-17 01:40:36,323 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-2] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-05-17 01:40:36,325 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> {
+2020-05-17 01:40:36,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-17 01:40:36,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"cp_code": "001",
+2020-05-17 01:40:36,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-17 01:40:36,326 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-17 01:40:36,327 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-17 01:40:36,327 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-17 01:40:36,327 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"account": "dz",
+2020-05-17 01:40:36,327 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"cmd": "register",
+2020-05-17 01:40:36,327 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"trans_id": "9",
+2020-05-17 01:40:36,327 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> 	"service": "charge"
+2020-05-17 01:40:36,327 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|> }
+2020-05-17 01:40:36,328 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< 200 OK
+2020-05-17 01:40:36,328 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|<
+2020-05-17 01:40:36,328 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-2] 127.0.0.1|< {"error_code":-1,"trans_id":"9"}
+2020-05-17 01:40:51,393 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> POST /payment/apigw
+2020-05-17 01:40:51,396 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-17 01:40:51,396 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> content-type: application/json
+2020-05-17 01:40:51,396 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-17 01:40:51,396 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> accept: */*
+2020-05-17 01:40:51,396 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> cache-control: no-cache
+2020-05-17 01:40:51,396 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> postman-token: 9042023d-5058-4f70-bfa0-8dcaf7bb1ffd
+2020-05-17 01:40:51,397 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-17 01:40:51,397 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-17 01:40:51,397 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> connection: keep-alive
+2020-05-17 01:40:51,397 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> content-length: 229
+2020-05-17 01:40:51,397 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|>
+2020-05-17 01:40:51,397 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-17 01:40:51,398 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] Ip Adress '127.0.0.1' is valid
+2020-05-17 01:40:51,398 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-17 01:40:51,398 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-17 01:40:51,398 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] Looking for the header start with 'PGW'
+2020-05-17 01:40:51,401 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] checking authentication for user 'pgw_fptplay'
+2020-05-17 01:40:51,401 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] security context was null, so authorizating user
+2020-05-17 01:40:51,401 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-3] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-17 01:40:51,402 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-3] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-17 01:40:51,414 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-3] authorizated user 'pgw_fptplay', setting security context
+2020-05-17 01:40:51,415 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-3] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "10",
+	"service": "charge"
+}'
+2020-05-17 01:40:51,431 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-3] Service from the request is 'charge'
+2020-05-17 01:40:51,431 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-3] [doTelcoCharge] doing telco charging...
+2020-05-17 01:40:51,434 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [verifyParameter] Starting to check request: 10
+2020-05-17 01:40:51,435 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [verifyParameter] Result: true
+2020-05-17 01:40:51,435 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [verifyRequestCredentials] Starting to check request: 10
+2020-05-17 01:40:51,436 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [verifyRequestCredentials] Result: true
+2020-05-17 01:40:51,482 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [insertRequest][to DB] Result ID: 5ec033b3226bfb6cd6528114
+2020-05-17 01:40:51,483 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-3] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='10',price='0',evenTime='null',errorCode='0', dbId='5ec033b3226bfb6cd6528114'}'}
+2020-05-17 01:40:51,484 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-3] msgKeyword = null
+2020-05-17 01:40:51,484 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-3] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-17 01:40:51,487 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-3] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='10',price='0',evenTime='null',errorCode='0', dbId='5ec033b3226bfb6cd6528114'}'}
+2020-05-17 01:40:51,487 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ec033b3226bfb6cd6528114] from db
+2020-05-17 01:40:51,505 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='TELCO_CHARGE_RESPONSE', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='10',price='0',evenTime='null',errorCode='0', dbId='5ec033b3226bfb6cd6528114'}'}
+2020-05-17 01:40:52,499 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ec033b3226bfb6cd6528114] from db
+2020-05-17 01:40:53,508 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ec033b3226bfb6cd6528114] from db
+2020-05-17 01:40:54,517 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] starting to select result of the request [5ec033b3226bfb6cd6528114] from db
+2020-05-17 01:40:54,521 WARN com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-3] [getResultOfProcess] the progress of the request is timeout -> return timeout error code to client
+2020-05-17 01:40:54,524 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> {
+2020-05-17 01:40:54,524 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-17 01:40:54,525 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"cp_code": "001",
+2020-05-17 01:40:54,525 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-17 01:40:54,526 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-17 01:40:54,526 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-17 01:40:54,526 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-17 01:40:54,527 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"account": "dz",
+2020-05-17 01:40:54,527 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"cmd": "register",
+2020-05-17 01:40:54,527 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"trans_id": "10",
+2020-05-17 01:40:54,527 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> 	"service": "charge"
+2020-05-17 01:40:54,528 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|> }
+2020-05-17 01:40:54,528 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|< 200 OK
+2020-05-17 01:40:54,528 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|<
+2020-05-17 01:40:54,528 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-3] 127.0.0.1|< {"error_code":-1,"trans_id":"10"}
+2020-05-17 01:42:30,039 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-21-thread-1] Routing file updated
+2020-05-17 01:42:30,060 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-21-thread-1] New routes created.
+2020-05-17 01:42:41,159 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> POST /payment/apigw
+2020-05-17 01:42:41,161 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> authorization: PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ
+2020-05-17 01:42:41,161 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-type: application/json
+2020-05-17 01:42:41,161 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> user-agent: PostmanRuntime/7.24.1
+2020-05-17 01:42:41,161 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept: */*
+2020-05-17 01:42:41,161 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> cache-control: no-cache
+2020-05-17 01:42:41,162 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> postman-token: 7dcd2637-10f0-4024-837e-0a095560ca3b
+2020-05-17 01:42:41,162 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> host: 127.0.0.1:8881
+2020-05-17 01:42:41,162 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> accept-encoding: gzip, deflate, br
+2020-05-17 01:42:41,162 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> connection: keep-alive
+2020-05-17 01:42:41,162 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> content-length: 229
+2020-05-17 01:42:41,162 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|>
+2020-05-17 01:42:41,162 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Checking Remote Ip Adress '127.0.0.1' for the request
+2020-05-17 01:42:41,163 TRACE com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] Ip Adress '127.0.0.1' is valid
+2020-05-17 01:42:41,163 TRACE com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Processing authentication for 'http://127.0.0.1:8881/payment/apigw' ...
+2020-05-17 01:42:41,163 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] The request header is 'PGW eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwZ3dfZnB0cGxheSIsImV4cCI6MTU5MDQwMDEzOCwiaWF0IjoxNTg5NTM2MTM4fQ.CXIMtxBVc4s4R9zUeLg80EVjfLucmrfLgBQ4nFc_1_LMuVt9Y77nt7IV_Cf5DM2O06BP67Bcq_uTCwqol8ZxGQ'
+2020-05-17 01:42:41,163 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] Looking for the header start with 'PGW'
+2020-05-17 01:42:41,167 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] checking authentication for user 'pgw_fptplay'
+2020-05-17 01:42:41,167 DEBUG com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] security context was null, so authorizating user
+2020-05-17 01:42:41,167 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [JwtUserDetailsService] load info of user 'pgw_fptplay'
+2020-05-17 01:42:41,167 INFO com.dz.apigw.security.JwtUserDetailsService [http-nio-8881-exec-1] [loadUserByUsername] Found user with username 'pgw_fptplay'
+2020-05-17 01:42:41,171 INFO com.dz.apigw.security.JwtAuthorizationTokenFilter [http-nio-8881-exec-1] authorizated user 'pgw_fptplay', setting security context
+2020-05-17 01:42:41,173 TRACE com.dz.apigw.controllers.APIGWMainController [http-nio-8881-exec-1] Remote request body is '{
+	"telco": "vinaphone",
+	"cp_code": "001",
+	"service_code": "FPTPLAY",
+	"service_id": "FPTPLAYID",
+	"package_code": "VIP",
+	"msisdn": "84982051117",
+	"account": "dz",
+	"cmd": "register",
+	"trans_id": "11",
+	"service": "charge"
+}'
+2020-05-17 01:42:41,183 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] Service from the request is 'charge'
+2020-05-17 01:42:41,185 TRACE com.dz.apigw.services.APIGWMainServiceImpl [http-nio-8881-exec-1] [doTelcoCharge] doing telco charging...
+2020-05-17 01:42:41,190 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Starting to check request: 11
+2020-05-17 01:42:41,190 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyParameter] Result: true
+2020-05-17 01:42:41,191 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Starting to check request: 11
+2020-05-17 01:42:41,191 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [verifyRequestCredentials] Result: true
+2020-05-17 01:42:41,256 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [insertRequest][to DB] Result ID: 5ec03421226bfb6cd6528116
+2020-05-17 01:42:41,257 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Send msg = Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='11',price='0',evenTime='null',errorCode='0', dbId='5ec03421226bfb6cd6528116'}'}
+2020-05-17 01:42:41,258 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] msgKeyword = null
+2020-05-17 01:42:41,259 TRACE com.dz.apigw.msgqueue.AMQPMsgRouter [http-nio-8881-exec-1] Destination found: name = PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE, keyword = null
+2020-05-17 01:42:41,266 INFO com.dz.apigw.msgqueue.AMQPProducer [http-nio-8881-exec-1] Msg sent to queue[queue:'PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE']= Notification {notificationType='TELCO_CHARGE_REQUEST', destinationQueueName='PAYMENTGW.APIGW.FPTPLAY', msg='MSG {msgType='TELCOCHARGE_REQUEST', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='001', telco='vinaphone', service='charge', service_code='FPTPLAY', service_id='FPTPLAYID', package_code='VIP', msisdn='0982051117', account='null',cmd='register',trans_id='11',price='0',evenTime='null',errorCode='0', dbId='5ec03421226bfb6cd6528116'}'}
+2020-05-17 01:42:41,267 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec03421226bfb6cd6528116] from db
+2020-05-17 01:42:41,589 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [listenOnCPQueue] Received a new notification [TELCO_CHARGE_RESPONSE]...
+2020-05-17 01:42:41,590 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='TELCO_CHARGE_RESPONSE', destinationQueueName='null', msg='MSG {msgType='TELCOCHARGE_RESPONSE', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='null', service_id='null', package_code='null', msisdn='null', account='null',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='-1', dbId='5ec03421226bfb6cd6528116'}'}
+2020-05-17 01:42:41,611 INFO com.dz.apigw.services.TelcoChargingServiceImpl [SimpleAsyncTaskExecutor-1] [updateRequest] Found row Id [5ec03421226bfb6cd6528116]
+2020-05-17 01:42:41,627 INFO com.dz.apigw.services.TelcoChargingServiceImpl [SimpleAsyncTaskExecutor-1] [updateRequest][to DB] [Id: 5ec03421226bfb6cd6528116] Result: true
+2020-05-17 01:42:42,276 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] starting to select result of the request [5ec03421226bfb6cd6528116] from db
+2020-05-17 01:42:42,278 INFO com.dz.apigw.services.TelcoChargingServiceImpl [http-nio-8881-exec-1] [getResultOfProcess] Found result of the request [5ec03421226bfb6cd6528116]
+2020-05-17 01:42:42,282 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> {
+2020-05-17 01:42:42,282 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"telco": "vinaphone",
+2020-05-17 01:42:42,282 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cp_code": "001",
+2020-05-17 01:42:42,282 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_code": "FPTPLAY",
+2020-05-17 01:42:42,282 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service_id": "FPTPLAYID",
+2020-05-17 01:42:42,282 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"package_code": "VIP",
+2020-05-17 01:42:42,283 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"msisdn": "84982051117",
+2020-05-17 01:42:42,283 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"account": "dz",
+2020-05-17 01:42:42,283 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"cmd": "register",
+2020-05-17 01:42:42,283 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"trans_id": "11",
+2020-05-17 01:42:42,283 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> 	"service": "charge"
+2020-05-17 01:42:42,283 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|> }
+2020-05-17 01:42:42,283 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< 200 OK
+2020-05-17 01:42:42,284 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|<
+2020-05-17 01:42:42,284 INFO com.dz.apigw.security.AuthorizationIPAddressFilter [http-nio-8881-exec-1] 127.0.0.1|< {"error_code":-1,"trans_id":"11"}
+2020-05-17 02:00:10,436 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-21-thread-1] Routing file updated
+2020-05-17 02:00:10,534 DEBUG com.dz.apigw.msgqueue.AMQPMsgRouter [pool-21-thread-1] Deleting routes:
+2020-05-17 02:00:10,699 DEBUG com.dz.apigw.msgqueue.AMQPMsgRouter [pool-21-thread-1]   closed: PAYMENTGW.TELCO.CHARGING.REQUEST.VINAPHONE
+2020-05-17 02:00:10,701 DEBUG com.dz.apigw.msgqueue.AMQPMsgRouter [pool-21-thread-1]   closed: PAYMENTGW.TELCO.OTPCONFIRM.REQUEST.VINAPHONE
+2020-05-17 02:00:10,701 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-21-thread-1] Old routes deleted.
+2020-05-17 02:00:10,718 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-21-thread-1] New routes created.
+2020-05-17 19:40:56,517 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-5-thread-1] Routing file updated
+2020-05-17 19:41:23,609 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-5-thread-1] New routes created.
+2020-05-17 19:41:23,730 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-2] [cpAccountChecking] Received a new notification...
+2020-05-17 19:41:23,730 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-2] msg: Notification {notificationType='ACCOUNT_CHECKING_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE', msg='MSG {msgType='ACCOUNT_CHECKING_REQUEST', keyword='TRUYENHINHFPTPLAY', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='VIP1', msisdn='null', account='DZ',cmd='null',trans_id='4',price='20000',evenTime='202005510123030',errorCode='0', dbId='5ec039ef226bfb5b25a561a3'}'}
+2020-05-17 19:41:23,730 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-2] [cpAccountChecking] doing cp account checking...
+2020-05-17 19:41:23,743 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-2] [verifyParameter] Starting to check request: 4
+2020-05-17 19:41:23,743 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-2] [verifyParameter] Result: true
+2020-05-17 19:41:23,745 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-2] [processRequest] start to process request: 4 [account=DZ]
+2020-05-17 19:41:23,768 ERROR com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-2] [processRequest] Exception: Not enough variable values available to expand 'apigw.user.api.account_checking'
+2020-05-17 19:41:23,769 INFO com.dz.apigw.msgqueue.AMQPProducer [SimpleAsyncTaskExecutor-2] Send msg = Notification {notificationType='ACCOUNT_CHECKING_REQUEST', destinationQueueName='null', msg='MSG {msgType='ACCOUNT_CHECKING_RESPONSE', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='null', service_id='null', package_code='null', msisdn='null', account='null',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='-1', dbId='5ec039ef226bfb5b25a561a3'}'}
+2020-05-17 19:41:23,803 INFO com.dz.apigw.msgqueue.AMQPProducer [SimpleAsyncTaskExecutor-2] Msg sent to queue[queue:'PAYMENTGW.TELCO.REQUEST.VINAPHONE']= Notification {notificationType='ACCOUNT_CHECKING_REQUEST', destinationQueueName='null', msg='MSG {msgType='ACCOUNT_CHECKING_RESPONSE', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='null', service_id='null', package_code='null', msisdn='null', account='null',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='-1', dbId='5ec039ef226bfb5b25a561a3'}'}
+2020-05-17 19:44:11,288 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] Routing file updated
+2020-05-17 19:44:11,306 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-3-thread-1] New routes created.
+2020-05-17 19:45:16,930 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpAccountChecking] Received a new notification...
+2020-05-17 19:45:16,954 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='ACCOUNT_CHECKING_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE', msg='MSG {msgType='ACCOUNT_CHECKING_REQUEST', keyword='TRUYENHINHFPTPLAY', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='VIP1', msisdn='null', account='DZ',cmd='null',trans_id='5',price='20000',evenTime='202005510123030',errorCode='0', dbId='5ec131dc226bfbce6a42dfc8'}'}
+2020-05-17 19:45:16,963 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpAccountChecking] doing cp account checking...
+2020-05-17 19:45:17,021 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [verifyParameter] Starting to check request: 5
+2020-05-17 19:45:17,022 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [verifyParameter] Result: true
+2020-05-17 19:45:17,024 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [processRequest] start to process request: 5 [account=DZ]
+2020-05-17 19:45:17,062 ERROR com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [processRequest] Exception: Not enough variable values available to expand 'apigw.user.api.account_checking'
+2020-05-17 19:45:17,065 INFO com.dz.apigw.msgqueue.AMQPProducer [SimpleAsyncTaskExecutor-1] Send msg = Notification {notificationType='ACCOUNT_CHECKING_REQUEST', destinationQueueName='null', msg='MSG {msgType='ACCOUNT_CHECKING_RESPONSE', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='null', service_id='null', package_code='null', msisdn='null', account='null',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='-1', dbId='5ec131dc226bfbce6a42dfc8'}'}
+2020-05-17 19:45:17,093 INFO com.dz.apigw.msgqueue.AMQPProducer [SimpleAsyncTaskExecutor-1] Msg sent to queue[queue:'PAYMENTGW.TELCO.REQUEST.VINAPHONE']= Notification {notificationType='ACCOUNT_CHECKING_REQUEST', destinationQueueName='null', msg='MSG {msgType='ACCOUNT_CHECKING_RESPONSE', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='null', service_id='null', package_code='null', msisdn='null', account='null',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='-1', dbId='5ec131dc226bfbce6a42dfc8'}'}
+2020-05-17 19:47:50,832 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-6-thread-1] Routing file updated
+2020-05-17 19:47:50,865 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-6-thread-1] New routes created.
+2020-05-17 19:49:51,002 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1] Routing file updated
+2020-05-17 19:49:51,033 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-9-thread-1] New routes created.
+2020-05-17 19:50:02,735 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-12-thread-1] Routing file updated
+2020-05-17 19:50:02,741 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-12-thread-1] New routes created.
+2020-05-17 19:50:08,276 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpAccountChecking] Received a new notification...
+2020-05-17 19:50:08,278 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='ACCOUNT_CHECKING_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE', msg='MSG {msgType='ACCOUNT_CHECKING_REQUEST', keyword='TRUYENHINHFPTPLAY', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='VIP1', msisdn='null', account='DZ',cmd='null',trans_id='6',price='20000',evenTime='202005510123030',errorCode='0', dbId='5ec13300226bfbce6a42dfcc'}'}
+2020-05-17 19:50:08,278 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpAccountChecking] doing cp account checking...
+2020-05-17 19:50:08,289 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [verifyParameter] Starting to check request: 6
+2020-05-17 19:50:08,289 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [verifyParameter] Result: true
+2020-05-17 19:50:08,291 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [processRequest] start to process request: 6 [account=DZ]
+2020-05-17 19:50:08,704 ERROR com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [processRequest] Exception: 403 Forbidden
+2020-05-17 19:50:08,707 INFO com.dz.apigw.msgqueue.AMQPProducer [SimpleAsyncTaskExecutor-1] Send msg = Notification {notificationType='ACCOUNT_CHECKING_REQUEST', destinationQueueName='null', msg='MSG {msgType='ACCOUNT_CHECKING_RESPONSE', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='null', service_id='null', package_code='null', msisdn='null', account='null',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='-1', dbId='5ec13300226bfbce6a42dfcc'}'}
+2020-05-17 19:50:08,712 INFO com.dz.apigw.msgqueue.AMQPProducer [SimpleAsyncTaskExecutor-1] Msg sent to queue[queue:'PAYMENTGW.TELCO.REQUEST.VINAPHONE']= Notification {notificationType='ACCOUNT_CHECKING_REQUEST', destinationQueueName='null', msg='MSG {msgType='ACCOUNT_CHECKING_RESPONSE', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='null', service_id='null', package_code='null', msisdn='null', account='null',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='-1', dbId='5ec13300226bfbce6a42dfcc'}'}
+2020-05-17 19:51:13,695 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-15-thread-1] Routing file updated
+2020-05-17 19:51:13,706 INFO com.dz.apigw.msgqueue.AMQPMsgRouter [pool-15-thread-1] New routes created.
+2020-05-17 23:37:00,166 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpAccountChecking] Received a new notification...
+2020-05-17 23:37:00,198 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] msg: Notification {notificationType='ACCOUNT_CHECKING_REQUEST', destinationQueueName='PAYMENTGW.TELCO.REQUEST.VINAPHONE', msg='MSG {msgType='ACCOUNT_CHECKING_REQUEST', keyword='TRUYENHINHFPTPLAY', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='TRUYENHINHFPTPLAY', service_id='null', package_code='VIP1', msisdn='null', account='DZ',cmd='null',trans_id='7',price='20000',evenTime='202005510123030',errorCode='0', dbId='5ec1682b226bfbce6a42dfd3'}'}
+2020-05-17 23:37:00,200 INFO com.dz.apigw.msgqueue.AMQPConsumer [SimpleAsyncTaskExecutor-1] [cpAccountChecking] doing cp account checking...
+2020-05-17 23:37:00,304 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [verifyParameter] Starting to check request: 7
+2020-05-17 23:37:00,435 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [verifyParameter] Result: true
+2020-05-17 23:37:00,470 INFO com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [processRequest] start to process request: 7 [account=DZ]
+2020-05-17 23:37:00,689 ERROR com.dz.apigw.services.AccountCheckingServiceImpl [SimpleAsyncTaskExecutor-1] [processRequest] Exception: 403 Forbidden
+2020-05-17 23:37:00,692 INFO com.dz.apigw.msgqueue.AMQPProducer [SimpleAsyncTaskExecutor-1] Send msg = Notification {notificationType='ACCOUNT_CHECKING_RESPONSE', destinationQueueName='null', msg='MSG {msgType='ACCOUNT_CHECKING_RESPONSE', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='null', service_id='null', package_code='null', msisdn='null', account='null',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='-1', dbId='5ec1682b226bfbce6a42dfd3'}'}
+2020-05-17 23:37:00,699 INFO com.dz.apigw.msgqueue.AMQPProducer [SimpleAsyncTaskExecutor-1] Msg sent to queue[queue:'PAYMENTGW.TELCO.REQUEST.VINAPHONE']= Notification {notificationType='ACCOUNT_CHECKING_RESPONSE', destinationQueueName='null', msg='MSG {msgType='ACCOUNT_CHECKING_RESPONSE', keyword='null', status_process='0', msgRxTime='null', msgRtTime='null', cp_code='null', telco='null', service='null', service_code='null', service_id='null', package_code='null', msisdn='null', account='null',cmd='null',trans_id='null',price='0',evenTime='null',errorCode='-1', dbId='5ec1682b226bfbce6a42dfd3'}'}
