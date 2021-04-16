@@ -56,17 +56,17 @@ public class OpportunityService {
 		return retObj;
 	}
 
-	public OpportunityApiObj findOpportunityById(int Id) {
+	public OpportunityApiObj findOpportunityById(String Id) {
 		OpportunityApiObj retOp = null;
 		
-		String apiUrl = torreProperties.getOpportunityApiUrl();
+		String apiUrl = torreProperties.getOpportunityApiUrl() + Id;
 		log.info("[findOpportunityById] find Opportunity = {} by calling API {}", Id, apiUrl);
 		
 		try {
 			if(this.validateOpportunityId(Id)) {
 				//call Torre API
 				retOp = 
-						restTemplate.getForObject(apiUrl + Id, 
+						restTemplate.getForObject(apiUrl, 
 								OpportunityApiObj.class);
 				//
 				log.info("API Result: " + retOp.toString());
@@ -83,12 +83,12 @@ public class OpportunityService {
 	/*
 	 *  Id validation
 	 */
-	private boolean validateOpportunityId(int Id) {
+	private boolean validateOpportunityId(String Id) {
 		boolean ret = false;
 		
 		try {
 			//check Id valid
-			if(Id > 0) {
+			if(Id!=null & !Id.equals("")) {
 				ret = true; //validated
 			}
 		}
@@ -96,8 +96,7 @@ public class OpportunityService {
 			log.error("Exception: {}", ex.getMessage());
 		}
 		finally{
-			log.info("[validateOpportunityId] result = ", ret);
-			
+			log.info("[validateOpportunityId] result = {}", (ret ? "true" : "false"));
 		}
 		
 		return ret;

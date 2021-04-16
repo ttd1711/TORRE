@@ -1,0 +1,98 @@
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<div class="opportunity-detail-card-1-head has-image col-md-12"
+				th:style="'background-image: url('+${coverPath}+')'"></div>
+		</div>
+	</div>
+
+	<!-- Four equal columns -->
+	<div class="row">
+		<div class="col">
+			<div class="opportunity-detail-card-1 col-md-12">
+				<div class="card-profile-image">
+					<img th:src="${opportunityDetail.serpTags.hiringOrganization.logo}"
+						alt="profile-image" class="profile" />
+				</div>
+				<div class="card-sub-1">
+					<h3>
+						<th:block th:text="${opportunityDetail.objective}"></th:block>
+						<small>A <th:block
+								th:each="itemEmpType,iterStat : ${opportunityDetail.serpTags.employmentType}">
+								<th:block th:if="${iterStat.count>1}">and </th:block>
+								<th:block th:if="${itemEmpType} == 'FULL_TIME'">
+									full time
+								</th:block>
+								<th:block th:if="${itemEmpType} == 'CONTRACTOR'">
+									contract
+								</th:block>
+								<th:block th:if="${itemEmpType} == 'PART_TIME'">
+									part time
+								</th:block>
+							</th:block> job
+						</small>
+					</h3>
+				</div>
+
+				<div class="w-100 d-flex justify-content-center">
+					<div class="col-md-10">
+						<div class="row">
+							<div class="col">
+								<div class="card-content-1">
+									<h3>
+										Skills and experience needed
+										<th:block
+											th:each="itemSkillExp,iterStat : ${opportunityDetail.strengths}">
+											<th:block
+												th:unless="${itemSkillExp.experience} == 'potential-to-develop'">
+												<small th:text="${itemSkillExp.experienceTitle}"></small>
+												<div class="skill-block" th:text="${itemSkillExp.name}"></div>
+											</th:block>
+										</th:block>
+										<th:block
+											th:each="itemSkillExp,iterStat : ${opportunityDetail.strengths}">
+											<th:block
+												th:if="${itemSkillExp.experience} == 'potential-to-develop'">
+												<th:block th:if="${iterStat.count<=1}">
+													<small th:text="${itemSkillExp.experienceTitle}"></small>
+												</th:block>
+												<div class="skill-block" th:text="${itemSkillExp.name}"></div>
+											</th:block>
+										</th:block>
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="card-content-1">
+									<h3>
+										Organization(s) name(s)
+										<th:block
+											th:each="itemSkillExp,iterStat : ${opportunityDetail.strengths}">
+											<th:block
+												th:unless="${itemSkillExp.experience} == 'potential-to-develop'">
+												<small th:text="${itemSkillExp.experienceTitle}"></small>
+												<div class="skill-block" th:text="${itemSkillExp.name}"></div>
+											</th:block>
+										</th:block>
+										<th:block
+											th:each="itemSkillExp,iterStat : ${opportunityDetail.strengths}">
+											<th:block
+												th:if="${itemSkillExp.experience} == 'potential-to-develop'">
+												<th:block th:if="${iterStat.count<=1}">
+													<small th:text="${itemSkillExp.experienceTitle}"></small>
+												</th:block>
+												<div class="skill-block" th:text="${itemSkillExp.name}"></div>
+											</th:block>
+										</th:block>
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

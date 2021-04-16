@@ -1,0 +1,25 @@
+package com.dzung.torre.opportunity.object;
+
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class OpportunityApiObj {
+	private String locale;
+	private String objective;
+	private List<Details> details;
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class Details {
+		private String code;
+		private String content;
+	}
+	
+}

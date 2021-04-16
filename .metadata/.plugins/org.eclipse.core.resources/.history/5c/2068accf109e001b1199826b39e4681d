@@ -1,0 +1,48 @@
+<div class="container">
+	<div class="row">
+		<th:block th:each="item,iterStat : ${opportunities.results}"
+			th:if="${iterStat.count <= 10}">
+			<div class="col-md-12 mt-4 d-flex justify-content-center">
+				<div class="card opportunity-card-1">
+					<img th:src="${item.organizations[0].picture}"
+						alt="profile-image" class="profile" />
+					<div class="card-content">
+						<h2>
+							<th:block th:text="${item.objective}"></th:block>
+							<th:block th:if="${item.type} == 'freelance-gigs'">
+								<small>Free Lancer</small>
+							</th:block>
+							<th:block th:if="${item.type} == 'full-time-employment'">
+								<small>Full-time employment</small>
+							</th:block>
+							<th:block th:if="${item.type} == 'part-time-employment'">
+								<small>Part-time employment</small>
+							</th:block>
+							<th:block th:if="${item.type} == 'internships'">
+								<small>Internships</small>
+							</th:block>
+							<small th:text="${item.organizations[0].name}"></small> 
+							<th:block th:switch="${item.remote}">
+								<small th:case="${true}"><i class="material-icons">connect_without_contact</i> Remote</small>
+								<small th:case="${false}"><i class="material-icons">apartment</i>Office</small>
+							</th:block>
+							<small class="bold" th:text="${item.compensation.data.currency} + ' ' + ${#numbers.formatCurrency(item.compensation.data.minAmount)} + ' - ' + ${#numbers.formatCurrency(item.compensation.data.maxAmount)} + ' / ' + (${item.compensation.data.periodicity})"></small>
+							<div class="skills">
+								<th:block th:each="skill,iterStat : ${item.skills}"
+									th:if="${iterStat.count <= 10}">
+									<div class="skill-block" th:text="${skill.name}"></div>
+								</th:block>
+							</div>
+						</h2>
+					
+						<div class="card-button">
+							<div class="input-field">
+								<button class="btn-search">View</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</th:block>
+	</div>
+</div>

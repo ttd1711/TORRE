@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/pageLayout :: pageHead"></head>
+<body>
+	<!--  Header -->
+	<header th:replace="common/header :: mainHeader"></header>
+	<!-- Main Container -->
+	<div class="mainBody">
+		<div class="container">
+			<div th:replace="people/searchBar :: searchBar"></div>
+			<div th:replace="people/searchBar :: script"></div>
+			<div class="mainBodyContent">
+				<div class="container" id="searchContentContainer"></div>
+			</div>
+		</div>
+	</div>
+	<!--  Footer -->
+	<footer th:replace="common/footer :: mainFooter"></footer>
+	<!--  page Script -->
+	<script th:replace="common/pageLayout :: pageScript"></script>
+	<!--  Script Search On Ready -->
+	<script th:replace="people/searchBar :: scriptOnReady"></script>
+
+	<script th:inline="javascript">
+		var curPage=/*[[${currentPageNumber}]]*/;
+		var pageSize=/*[[${pageSize}]]*/;
+		$(document)
+				.ready(
+						function() {
+							//ajax search default
+							$.ajax({
+								type : 'POST',
+								url : /*[[${apiOppotunitiesUrl} + '' + ${currentPageNumber} + '/' + ${pageSize}]]*/"",
+								cache : false,
+								beforeSend : function() {
+									$("#searchContentContainer")
+											.html(
+													'<div class="d-flex justify-content-center align-self-center w-100"><div class="spinner-grow text-light" role="status"><span class="sr-only">Loading...</span></div></div>');
+								},
+								complete : function() {
+									//$("#boxAdvanceSearch").html(data);
+								},
+								success : function(html) {
+									$("#searchContentContainer").html(html);
+								}
+							});
+						});
+		
+		function onClickViewOppById(id){
+			var url=/*[[@{/people/}]]*/"";
+			window.open(url + id);
+		}
+	</script>
+</body>
+</html>

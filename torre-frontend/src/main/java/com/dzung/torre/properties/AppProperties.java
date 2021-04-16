@@ -30,8 +30,17 @@ public class AppProperties {
 	@AllArgsConstructor
 	@NoArgsConstructor
 	public static class ApiTag {
-		private String opportunitiesSearchUrl;
+		private String gwOpportunitiesSearchUrl;
+		private String gwOpportunitiyDetailUrl;
 		private String opportunitiesAjaxSearchBoxUrl;
 		private String opportunitiesAjaxUrl;
+		private String opportunityDetailUrl;
+		
+		private String gwPeopleSearchUrl;
+		private String gwPeopleDetailUrl;
+		private String peopleAjaxSearchBoxUrl;
+		private String peopleAjaxUrl;
+		private String peopleDetailUrl;
+		private int pageSize;
 	}
 }

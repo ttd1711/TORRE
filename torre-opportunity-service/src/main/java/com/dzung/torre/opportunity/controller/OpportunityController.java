@@ -25,7 +25,7 @@ public class OpportunityController {
 	private OpportunityService opportunityService;
 	
 	@GetMapping("/{id}")
-	public OpportunityApiObj findOpportunityById(@PathVariable("id") int opportunityId) {
+	public OpportunityApiObj findOpportunityById(@PathVariable("id") String opportunityId) {
 		log.info("[findOpportunityById] find Id = {}", opportunityId);
 		
 		return opportunityService.findOpportunityById(opportunityId);

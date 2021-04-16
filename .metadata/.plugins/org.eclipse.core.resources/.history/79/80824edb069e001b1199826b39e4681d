@@ -1,0 +1,26 @@
+<div class="row d-flex justify-content-center">
+	<th:block th:each="item,iterStat : ${opportunities.results}"
+		th:if="${iterStat.count <= 10}">
+		<div class="col-md-12 mt-4">
+			<div class="card opportunity-card-1">
+				<img th:src="${item.organizations[0].picture}"
+					alt="profile-image" class="profile" />
+				<div class="card-content">
+					<h2>
+						<th:block th:text="${item.objective}"></th:block>
+						<small th:text="${item.type}"></small> 
+						<small th:text="${item.organizations[0].name}"></small> 
+						<small th:text="${item.remote} ? 'Remote' : 'Office'"></small>
+						<small class="bold" th:text="${item.remote} ? 'Remote' : 'Office'"></small>
+					</h2>
+				
+					<div class="card-button">
+						<div class="input-field">
+							<button class="btn-search">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</th:block>
+</div>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/pageLayout :: pageHead"></head>
+<body>
+	<!--  Header -->
+	<header th:replace="common/header :: mainHeader"></header>
+	<!-- Main Container -->
+	<div class="mainBody">
+		<div class="container d-flex justify-content-center">
+			<div class="boxInfomation col-md-6 mt-4">
+		</div>
+		</div>
+	</div>
+	<!--  Footer -->
+	<footer th:replace="common/footer :: mainFooter"></footer>
+	<!--  page Script -->
+	<script th:replace="common/pageLayout :: pageScript"></script>
+</body>
+</html>

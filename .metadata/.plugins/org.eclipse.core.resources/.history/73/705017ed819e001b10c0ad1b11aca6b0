@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="row">
+			<div class="col-md-12 mt-4 d-flex justify-content-center">
+				<div class="card opportunity-detail-card-1">
+					<div class="card-profile-image">
+						<img th:src="${opportunityDetail.serpTags.hiringOrganization.logo}" alt="profile-image" class="profile" />
+						<h3 th:text="${opportunityDetail.serpTags.title}"></h3>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>

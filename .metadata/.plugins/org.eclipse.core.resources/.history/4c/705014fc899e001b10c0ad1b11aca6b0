@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/pageLayout :: pageHead"></head>
+<body>
+	<!--  Header -->
+	<header th:replace="common/header :: mainHeader"></header>
+	<!-- Main Container -->
+	<div class="mainBody">
+		<div class="container d-flex justify-content-center">
+			<div class="boxInfomation col-md-10 mt-4 p-4">
+				<p><span style="font-weight:700;">Dear Sir / Madam,</span></p>
+				<p>ARCHITECTURE DESIGN</p>
+
+				<p><span style="font-weight:700;">Back-end:</span> Micro services + API Gateway</p>
+				<p><span style="font-weight:700;">Front-end:</span> Bootstrap + Jquery</p>
+				<p>Diagram:
+					https://github.com/ttd1711/TORRE/blob/main/torre_architecture.png</p>
+				<p>
+					Thanks & Best Regards,<br />Trung Dung Truong
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--  Footer -->
+	<footer th:replace="common/footer :: mainFooter"></footer>
+	<!--  page Script -->
+	<script th:replace="common/pageLayout :: pageScript"></script>
+</body>
+</html>

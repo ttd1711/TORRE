@@ -1,0 +1,70 @@
+package com.dzung.torre.opportunity.object;
+
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class OpportunityApiObj {
+	private String locale;
+	private String objective;
+	private List<Details> details;
+	private List<Place> place;
+	private String deadline;
+	
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class Details {
+		private String code;
+		private String content;
+	}
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class Place {
+		private boolean remote;
+		private boolean anywhere;
+		private boolean timezone;
+		private List<Location> location;
+		private SerpTags serpTags;
+		
+		@Data
+		@AllArgsConstructor
+		@NoArgsConstructor
+		private static class Location {
+			private String id;
+			private long latitude;
+			private long longitude;
+			private String serpData;
+		}
+		
+	}	
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class SerpTags {
+		private boolean remote;
+		private boolean anywhere;
+		private boolean timezone;
+		private List<Location> location;
+		
+		@Data
+		@AllArgsConstructor
+		@NoArgsConstructor
+		private static class Location {
+			private String validThrough;
+			private List<String> employmentType;
+			private long longitude;
+			private String serpData;
+		}
+		
+	}	
+}

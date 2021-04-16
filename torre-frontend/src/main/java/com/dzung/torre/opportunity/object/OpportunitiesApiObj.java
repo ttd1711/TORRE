@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class OpportunitiesApiObj {
 	
-	private Aggregator aggregators;
+	private OpportunityAggregator aggregators;
 	private List<ResultOpportinity> results;
 	private int offset;
 	private int size;

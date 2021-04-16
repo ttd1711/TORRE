@@ -1,0 +1,116 @@
+package com.dzung.torre.opportunity.object;
+
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class OpportunityApiObj {
+	private List<Attachment> attachments;
+	private String locale;
+	private String objective;
+	private List<Details> details;
+	private Place place;
+	private String deadline;
+	private SerpTags serpTags;	
+	private List<Strengths> strengths;
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	public static class Attachment {
+		private String resource;
+		private String address;
+		private String path;
+		private String caption;
+	}
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class Details {
+		private String code;
+		private String content;
+	}
+
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class Strengths {
+		private String id;
+		private String code;
+		private String name;
+		private String experience;
+		@Override
+		public String toString() {
+			return "Strengths [id=" + id + ", code=" + code + ", name=" + name + ", experience=" + experience + "]";
+		}
+	}
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class Place {
+		private boolean remote;
+		private boolean anywhere;
+		private boolean timezone;
+		private List<Location> location;
+		
+		@Data
+		@AllArgsConstructor
+		@NoArgsConstructor
+		private static class Location {
+			private String id;
+			private String serpData;
+		}
+		
+	}	
+	
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	private static class SerpTags {
+		private String validThrough;
+		private List<String> employmentType;
+		private BaseSalary baseSalary;
+		private String description;
+		private String title;
+		private HiringOrganization hiringOrganization;
+		
+		@Data
+		@AllArgsConstructor
+		@NoArgsConstructor
+		private static class HiringOrganization {
+			private String name;			
+			private String logo;
+		}
+		
+		@Data
+		@AllArgsConstructor
+		@NoArgsConstructor
+		private static class BaseSalary {
+			private String currency;			
+			private Value value;
+			
+			@Data
+			@AllArgsConstructor
+			@NoArgsConstructor
+			private static class Value {
+				private long minValue;
+				private long maxValue;
+				private String unitText;
+			}
+		}
+		
+	}
+
+	@Override
+	public String toString() {
+		return "OpportunityApiObj [locale=" + locale + ", objective=" + objective + ", details=" + details + ", place="
+				+ place + ", deadline=" + deadline + ", serpTags=" + serpTags + ", strengths=" + strengths + "]";
+	}	
+}

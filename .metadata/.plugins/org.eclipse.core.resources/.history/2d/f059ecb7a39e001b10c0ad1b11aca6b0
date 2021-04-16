@@ -1,0 +1,42 @@
+<div class="container">
+	<div class="row">
+		<th:block th:each="item,iterStat : ${people.results}"
+			th:if="${iterStat.count <= 10}">
+			<div class="col-md-4 mt-4">
+				<div class="card profile-card-1">
+					<div class="background-block">
+						<img
+							src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+							alt="profile-sample1" class="background" />
+					</div>
+					<div class="profile-thumb-block">
+						<img th:src="${item.picture}" alt="profile-image" class="profile" />
+					</div>
+					<div class="card-content">
+						<h2>
+							<th:block th:text="${item.name}"></th:block>
+							<small th:text="${item.professionalHeadline}"></small>
+							<th:block th:switch="${item.remoter}">
+								<small th:case="${true}"><i class="material-icons">connect_without_contact</i>
+									Remote</small>
+								<small th:case="${false}"><i class="material-icons">apartment</i>Office</small>
+							</th:block>
+							<div class="skills">
+								<th:block th:each="skill,iterStat : ${item.skills}"
+									th:if="${iterStat.count <= 10}">
+									<div class="skill-block" th:text="${skill.name}"></div>
+								</th:block>
+							</div>
+						</h2>
+						<div class="icon-block">
+							<a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i
+								class="fa fa-twitter"></i></a><a href="#"> <i
+								class="fa fa-google-plus"></i></a>
+						</div>
+
+
+					</div>
+				</div>
+		</th:block>
+	</div>
+</div>
