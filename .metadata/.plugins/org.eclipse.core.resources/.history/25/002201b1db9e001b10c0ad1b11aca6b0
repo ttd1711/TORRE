@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="input-field">
 		<div class="input-select">
-			<select data-trigger="" name="remote">
+			<select data-trigger="" name="choices-single-defaul">
 				<option placeholder="" value="">REMOTE</option>
 				<th:block th:each="item : ${opportunityAggregate.aggregators.remote}">
 					<option th:text="${item.value}"></option>
@@ -14,7 +14,7 @@
 	</div>
 	<div class="input-field">
 		<div class="input-select">
-			<select data-trigger="" name="organization">
+			<select data-trigger="" name="choices-single-defaul">
 				<option placeholder="" value="">ORGANIZATION</option>
 				<th:block th:each="item,iterStat : ${organizationCondList}"
 					th:if="${iterStat.count <= 10}">
@@ -25,7 +25,7 @@
 	</div>
 	<div class="input-field">
 		<div class="input-select">
-			<select data-trigger="" name="skill">
+			<select data-trigger="" name="choices-single-defaul">
 				<option placeholder="" value="">SKILL</option>
 				<th:block th:each="item : ${opportunityAggregate.aggregators.skill}">
 					<option th:text="${item.value} + ' (' + ${item.total} + '+)'"></option>
@@ -37,7 +37,7 @@
 <div class="row second">
 	<div class="input-field">
 		<div class="input-select">
-			<select data-trigger="" name="compensation">
+			<select data-trigger="" name="choices-single-defaul">
 				<option placeholder="" value="">COMPENSATION</option>
 				<th:block
 					th:each="item : ${opportunityAggregate.aggregators.compensationrange}">
@@ -48,7 +48,7 @@
 	</div>
 	<div class="input-field">
 		<div class="input-select">
-			<select data-trigger="" name="type">
+			<select data-trigger="" name="choices-single-defaul">
 				<option placeholder="" value="">TYPE</option>
 				<th:block th:each="item : ${opportunityAggregate.aggregators.type}">
 					<option th:text="${item.value}"></option>
@@ -58,7 +58,7 @@
 	</div>
 	<div class="input-field">
 		<div class="input-select">
-			<select data-trigger="" name="location">
+			<select data-trigger="" name="choices-single-defaul">
 				<option placeholder="" value="">LOCATION</option>
 				<th:block
 					th:each="item : ${opportunityAggregate.aggregators.location}">

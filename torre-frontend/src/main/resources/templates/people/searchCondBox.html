@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="input-field">
 		<div class="input-select">
-			<select data-trigger="" name="choices-single-defaul">
+			<select data-trigger="" name="remote">
 				<option placeholder="" value="">REMOTE</option>
 				<th:block th:each="item : ${peopleAggregate.aggregators.remoter}">
 					<option th:text="${item.value}"></option>
@@ -14,7 +14,7 @@
 	</div>
 	<div class="input-field">
 		<div class="input-select">
-			<select data-trigger="" name="choices-single-defaul">
+			<select data-trigger="" name="opento">
 				<option placeholder="" value="">OPEN TO</option>
 				<th:block th:each="item : ${peopleAggregate.aggregators.opento}">
 					<option th:text="${item.value}"></option>
@@ -24,7 +24,7 @@
 	</div>
 	<div class="input-field">
 		<div class="input-select">
-			<select data-trigger="" name="choices-single-defaul">
+			<select data-trigger="" name="skill">
 				<option placeholder="" value="">SKILL</option>
 				<th:block th:each="item : ${peopleAggregate.aggregators.skill}">
 					<option th:text="${item.value} + ' (' + ${item.total} + '+)'"></option>
@@ -36,7 +36,7 @@
 <div class="row second">
 	<div class="input-field">
 		<div class="input-select">
-			<select data-trigger="" name="choices-single-defaul">
+			<select data-trigger="" name="compensation">
 				<option placeholder="" value="">COMPENSATION</option>
 				<th:block
 					th:each="item : ${peopleAggregate.aggregators.compensationrange}">
