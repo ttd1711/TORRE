@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.dzung.torre.opportunity.object.OpportunityAggregator;
+import com.dzung.torre.opportunity.object.GenomeApiObj;
 import com.dzung.torre.opportunity.object.OpportunitiesApiObj;
 import com.dzung.torre.opportunity.object.OpportunityApiObj;
 import com.dzung.torre.opportunity.object.OpportunitySearchRequest;
@@ -139,13 +140,13 @@ public class MainController {
 	}
 	
 	@GetMapping("/people/{id}")
-	public String pagePeopleById(@PathVariable(name = "id") final String opId
+	public String pagePeopleById(@PathVariable(name = "id") final String peopleId
 									,Model model) {
 		model.addAttribute("appName", appProperties.getPage().getName());
-		model.addAttribute("apiOppotunityDetailUrl", appProperties.getApi().getOpportunityDetailUrl());
-		model.addAttribute("opId", opId);
+		model.addAttribute("apiPeopleDetailUrl", appProperties.getApi().getPeopleDetailUrl());
+		model.addAttribute("peopleId", peopleId);
 		
-		return "opportunityDetail";
+		return "peopleDetail";
 	}
 	
 
@@ -181,4 +182,15 @@ public class MainController {
 		return "people/searchContentContainer";
 	}
 
+
+	@PostMapping("/people/{id}")
+	public String ajaxPeopleById(@PathVariable(name = "id") final String peopleId
+									,Model model) {
+		
+		GenomeApiObj peopleDetail = peopleService.findPeopleById(peopleId);
+		model.addAttribute("peopleDetail", peopleService.anlyzePeopleApiObj(peopleDetail));
+		
+		
+		return "people/peopleDetailContent";
+	}
 }

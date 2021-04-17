@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.dzung.torre.opportunity.object.OpportunityApiObj;
+import com.dzung.torre.opportunity.object.GenomeApiObj;
 import com.dzung.torre.opportunity.object.OpportunitiesApiObj;
 import com.dzung.torre.opportunity.object.OpportunitySearchRequest;
 import com.dzung.torre.opportunity.object.PeopleApiObj;
@@ -58,18 +59,18 @@ public class PeopleService {
 		return retObj;
 	}
 
-	public OpportunityApiObj findOpportunityById(String Id) {
-		OpportunityApiObj retOp = null;
+	public GenomeApiObj findPeopleById(String Id) {
+		GenomeApiObj retOp = null;
 		
-		String apiUrl = appProperties.getApi().getGwOpportunitiyDetailUrl().replace("{id}", Id);
-		log.info("[findOpportunityById] find Opportunity = {} by calling API {}", Id, apiUrl);
+		String apiUrl = appProperties.getApi().getGwPeopleDetailUrl().replace("{id}", Id);
+		log.info("[findPeopleById] find Opportunity = {} by calling API {}", Id, apiUrl);
 		
 		try {
 			if(this.validateOpportunityId(Id)) {
 				//call Torre API
 				retOp = 
 						restTemplate.getForObject(apiUrl, 
-								OpportunityApiObj.class);
+								GenomeApiObj.class);
 				//
 				log.info("API Result: " + retOp.toString());
 			}
@@ -156,4 +157,23 @@ public class PeopleService {
 		
 		return obj;
 	}
+	
+	
+	public GenomeApiObj anlyzePeopleApiObj(GenomeApiObj orgObj) {
+		GenomeApiObj obj = orgObj;
+		
+		try {
+			//process Strengths
+			
+		}
+		catch(Exception ex) {
+			log.error("Exception: {}", ex.getMessage());
+		}
+		finally{
+			log.info("[anlyzePeopleApiObj] Done");			
+		}
+		
+		return obj;
+	}
+
 }
